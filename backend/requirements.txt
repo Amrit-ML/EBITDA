@@ -1,0 +1,13 @@
+fastapi==0.141.1
+uvicorn[standard]==0.53.0
+pandas==3.0.5
+openpyxl==3.1.5        # .xlsx / .xlsm
+xlrd==2.0.2            # legacy .xls
+pdfplumber==0.11.10    # text-based PDF statements
+python-pptx==1.0.2     # native tables in decks
+python-docx==1.2.0     # .docx org documents
+pinecone==10.0.0       # org-context vector store (integrated embedding)
+numpy==2.5.3
+requests==2.34.2
+pytest==9.1.1
+httpx==0.28.1

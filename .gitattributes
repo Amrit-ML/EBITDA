@@ -1,0 +1,6 @@
+# Some sample PDFs contain no binary bytes, so git would treat them as text
+# and rewrite their line endings. Keep every document format byte-for-byte.
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.pptx binary

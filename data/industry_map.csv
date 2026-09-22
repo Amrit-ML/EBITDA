@@ -1,0 +1,675 @@
+cik,industry,source_sector,ticker,company
+34956,biotech,Drugs (Biotechnology),NasdaqCM:TENX,"Tenax Therapeutics, Inc. (NasdaqCM:TENX)"
+72444,biotech,Drugs (Biotechnology),OTCPK:VXRT,"Vaxart, Inc. (OTCPK:VXRT)"
+109657,biotech,Drugs (Biotechnology),NasdaqCM:GTBP,"GT Biopharma, Inc. (NasdaqCM:GTBP)"
+318154,biotech,Drugs (Biotechnology),NasdaqGS:AMGN,Amgen Inc. (NasdaqGS:AMGN)
+318306,biotech,Drugs (Biotechnology),NasdaqCM:ABEO,Abeona Therapeutics Inc. (NasdaqCM:ABEO)
+320017,biotech,Drugs (Biotechnology),NasdaqCM:LSTA,"Lisata Therapeutics, Inc. (NasdaqCM:LSTA)"
+715446,biotech,Drugs (Biotechnology),NasdaqCM:ANIX,"Anixa Biosciences, Inc. (NasdaqCM:ANIX)"
+724445,biotech,Drugs (Biotechnology),OTCPK:BZYR,"Burzynski Research Institute, Inc. (OTCPK:BZYR)"
+725363,biotech,Drugs (Biotechnology),NYSEAM:CVM,CEL-SCI Corporation (NYSEAM:CVM)
+727510,biotech,Drugs (Biotechnology),OTCPK:ENZN,"Enzon Pharmaceuticals, Inc. (OTCPK:ENZN)"
+728387,biotech,Drugs (Biotechnology),NYSEAM:CATX,"Perspective Therapeutics, Inc. (NYSEAM:CATX)"
+744218,biotech,Drugs (Biotechnology),NasdaqCM:CLDX,"Celldex Therapeutics, Inc. (NasdaqCM:CLDX)"
+748592,biotech,Drugs (Biotechnology),NasdaqCM:ERNA,Ernexa Therapeutics Inc. (NasdaqCM:ERNA)
+749647,biotech,Drugs (Biotechnology),NasdaqCM:IMNN,"Imunon, Inc. (NasdaqCM:IMNN)"
+791908,biotech,Drugs (Biotechnology),NasdaqGM:XOMA,XOMA Royalty Corporation (NasdaqGM:XOMA)
+811641,biotech,Drugs (Biotechnology),NasdaqCM:ICCC,ImmuCell Corporation (NasdaqCM:ICCC)
+812796,biotech,Drugs (Biotechnology),NasdaqCM:SNGX,"Soligenix, Inc. (NasdaqCM:SNGX)"
+818033,biotech,Drugs (Biotechnology),NasdaqCM:HRTX,"Heron Therapeutics, Inc. (NasdaqCM:HRTX)"
+827871,biotech,Drugs (Biotechnology),OTCPK:EGRX,"Eagle Pharmaceuticals, Inc. (OTCPK:EGRX)"
+831749,biotech,Drugs (Biotechnology),OTCPK:HXBM,"Helix BioMedix, Inc. (OTCPK:HXBM)"
+832489,biotech,Drugs (Biotechnology),NasdaqCM:GOVX,"GeoVax Labs, Inc. (NasdaqCM:GOVX)"
+836564,biotech,Drugs (Biotechnology),OTCPK:CPMV,"Mosaic ImmunoEngineering, Inc. (OTCPK:CPMV)"
+850261,biotech,Drugs (Biotechnology),OTCPK:SRNE,"Sorrento Therapeutics, Inc. (OTCPK:SRNE)"
+872589,biotech,Drugs (Biotechnology),NasdaqGS:REGN,"Regeneron Pharmaceuticals, Inc. (NasdaqGS:REGN)"
+873303,biotech,Drugs (Biotechnology),NasdaqGS:SRPT,"Sarepta Therapeutics, Inc. (NasdaqGS:SRPT)"
+874015,biotech,Drugs (Biotechnology),NasdaqGS:IONS,"Ionis Pharmaceuticals, Inc. (NasdaqGS:IONS)"
+875045,biotech,Drugs (Biotechnology),NasdaqGS:BIIB,Biogen Inc. (NasdaqGS:BIIB)
+875320,biotech,Drugs (Biotechnology),NasdaqGS:VRTX,Vertex Pharmaceuticals Incorporated (NasdaqGS:VRTX)
+876343,biotech,Drugs (Biotechnology),NYSEAM:LCTX,"Lineage Cell Therapeutics, Inc. (NYSEAM:LCTX)"
+879169,biotech,Drugs (Biotechnology),NasdaqGS:INCY,Incyte Corporation (NasdaqGS:INCY)
+879407,biotech,Drugs (Biotechnology),NasdaqGS:ARWR,"Arrowhead Pharmaceuticals, Inc. (NasdaqGS:ARWR)"
+882095,biotech,Drugs (Biotechnology),NasdaqGS:GILD,"Gilead Sciences, Inc. (NasdaqGS:GILD)"
+882796,biotech,Drugs (Biotechnology),NasdaqGS:BCRX,"BioCryst Pharmaceuticals, Inc. (NasdaqGS:BCRX)"
+886744,biotech,Drugs (Biotechnology),NasdaqGS:GERN,Geron Corporation (NasdaqGS:GERN)
+887359,biotech,Drugs (Biotechnology),NasdaqGM:VCEL,Vericel Corporation (NasdaqGM:VCEL)
+894158,biotech,Drugs (Biotechnology),NYSEAM:TOVX,"Theriva Biologics, Inc. (NYSEAM:TOVX)"
+898437,biotech,Drugs (Biotechnology),NasdaqGS:ANIK,"Anika Therapeutics, Inc. (NasdaqGS:ANIK)"
+899460,biotech,Drugs (Biotechnology),NasdaqGM:MNKD,MannKind Corporation (NasdaqGM:MNKD)
+899923,biotech,Drugs (Biotechnology),NasdaqGS:MYGN,"Myriad Genetics, Inc. (NasdaqGS:MYGN)"
+907654,biotech,Drugs (Biotechnology),NasdaqGM:ORKA,"Oruka Therapeutics, Inc. (NasdaqGM:ORKA)"
+908259,biotech,Drugs (Biotechnology),OTCPK:OTLC,"Oncotelic Therapeutics, Inc. (OTCPK:OTLC)"
+912544,biotech,Drugs (Biotechnology),OTCPK:NSTM,NovelStem International Corp. (OTCPK:NSTM)
+914475,biotech,Drugs (Biotechnology),NasdaqGS:NBIX,"Neurocrine Biosciences, Inc. (NasdaqGS:NBIX)"
+921114,biotech,Drugs (Biotechnology),NYSEAM:ARMP,"Armata Pharmaceuticals, Inc. (NYSEAM:ARMP)"
+921299,biotech,Drugs (Biotechnology),NasdaqGS:FGEN,"FibroGen, Inc. (NasdaqGS:FGEN)"
+925741,biotech,Drugs (Biotechnology),NasdaqCM:BCDA,"BioCardia, Inc. (NasdaqCM:BCDA)"
+939767,biotech,Drugs (Biotechnology),NasdaqGS:EXEL,"Exelixis, Inc. (NasdaqGS:EXEL)"
+946486,biotech,Drugs (Biotechnology),OTCPK:WINT,"Windtree Therapeutics, Inc. (OTCPK:WINT)"
+946644,biotech,Drugs (Biotechnology),NYSEAM:AIM,AIM ImmunoTech Inc. (NYSEAM:AIM)
+949858,biotech,Drugs (Biotechnology),NasdaqCM:ACHV,"Achieve Life Sciences, Inc. (NasdaqCM:ACHV)"
+1000694,biotech,Drugs (Biotechnology),NasdaqGS:NVAX,"Novavax, Inc. (NasdaqGS:NVAX)"
+1001233,biotech,Drugs (Biotechnology),NasdaqCM:SGMO,"Sangamo Therapeutics, Inc. (NasdaqCM:SGMO)"
+1001316,biotech,Drugs (Biotechnology),NasdaqCM:TGTX,"TG Therapeutics, Inc. (NasdaqCM:TGTX)"
+1006281,biotech,Drugs (Biotechnology),NYSEAM:PLX,"Protalix BioTherapeutics, Inc. (NYSEAM:PLX)"
+1022899,biotech,Drugs (Biotechnology),NasdaqCM:PTIX,"Protagenic Therapeutics, Inc. (NasdaqCM:PTIX)"
+1029142,biotech,Drugs (Biotechnology),NasdaqGS:DVAX,Dynavax Technologies Corporation (NasdaqGS:DVAX)
+1034842,biotech,Drugs (Biotechnology),NasdaqGS:RIGL,"Rigel Pharmaceuticals, Inc. (NasdaqGS:RIGL)"
+1042418,biotech,Drugs (Biotechnology),OTCPK:INTI,"Inhibitor Therapeutics, Inc. (OTCPK:INTI)"
+1048477,biotech,Drugs (Biotechnology),NasdaqGS:BMRN,BioMarin Pharmaceutical Inc. (NasdaqGS:BMRN)
+1053691,biotech,Drugs (Biotechnology),NasdaqCM:CRVO,CervoMed Inc. (NasdaqCM:CRVO)
+1055726,biotech,Drugs (Biotechnology),NasdaqCM:INO,"Inovio Pharmaceuticals, Inc. (NasdaqCM:INO)"
+1061983,biotech,Drugs (Biotechnology),NasdaqGS:CYTK,"Cytokinetics, Incorporated (NasdaqGS:CYTK)"
+1070081,biotech,Drugs (Biotechnology),NasdaqGS:PTCT,"PTC Therapeutics, Inc. (NasdaqGS:PTCT)"
+1070494,biotech,Drugs (Biotechnology),NasdaqGS:ACAD,ACADIA Pharmaceuticals Inc. (NasdaqGS:ACAD)
+1072379,biotech,Drugs (Biotechnology),OTCPK:NWBO,"Northwest Biotherapeutics, Inc. (OTCPK:NWBO)"
+1082554,biotech,Drugs (Biotechnology),NasdaqGS:UTHR,United Therapeutics Corporation (NasdaqGS:UTHR)
+1091326,biotech,Drugs (Biotechnology),OTCPK:VGLS,VG Life Sciences Inc. (OTCPK:VGLS)
+1091596,biotech,Drugs (Biotechnology),OTCPK:AURX,"Nuo Therapeutics, Inc. (OTCPK:AURX)"
+1094038,biotech,Drugs (Biotechnology),NasdaqCM:MRKR,"Marker Therapeutics, Inc. (NasdaqCM:MRKR)"
+1095981,biotech,Drugs (Biotechnology),NasdaqCM:PSTV,"Plus Therapeutics, Inc. (NasdaqCM:PSTV)"
+1098009,biotech,Drugs (Biotechnology),OTCPK:AAGH,America Great Health (OTCPK:AAGH)
+1098972,biotech,Drugs (Biotechnology),NasdaqCM:AGEN,Agenus Inc. (NasdaqCM:AGEN)
+1104506,biotech,Drugs (Biotechnology),NasdaqGS:INSM,Insmed Incorporated (NasdaqGS:INSM)
+1107421,biotech,Drugs (Biotechnology),NasdaqCM:TCRT,"Alaunos Therapeutics, Inc. (NasdaqCM:TCRT)"
+1108205,biotech,Drugs (Biotechnology),NasdaqCM:CRIS,"Curis, Inc. (NasdaqCM:CRIS)"
+1119643,biotech,Drugs (Biotechnology),OTCPK:NPHC,Nutra Pharma Corp. (OTCPK:NPHC)
+1124105,biotech,Drugs (Biotechnology),NasdaqCM:GYRE,"Gyre Therapeutics, Inc. (NasdaqCM:GYRE)"
+1124140,biotech,Drugs (Biotechnology),NasdaqCM:EXAS,Exact Sciences Corporation (NasdaqCM:EXAS)
+1125345,biotech,Drugs (Biotechnology),NasdaqGS:MGNX,"MacroGenics, Inc. (NasdaqGS:MGNX)"
+1128189,biotech,Drugs (Biotechnology),OTCPK:PKTX,"ProtoKinetix, Incorporated (OTCPK:PKTX)"
+1133416,biotech,Drugs (Biotechnology),NasdaqCM:GALT,Galectin Therapeutics Inc. (NasdaqCM:GALT)
+1133818,biotech,Drugs (Biotechnology),OTCPK:BPTH,"Bio-Path Holdings, Inc. (OTCPK:BPTH)"
+1133869,biotech,Drugs (Biotechnology),NasdaqCM:CAPR,"Capricor Therapeutics, Inc. (NasdaqCM:CAPR)"
+1137883,biotech,Drugs (Biotechnology),OTCPK:BCLI,Brainstorm Cell Therapeutics Inc. (OTCPK:BCLI)
+1157075,biotech,Drugs (Biotechnology),NasdaqCM:PMCB,"PharmaCyte Biotech, Inc. (NasdaqCM:PMCB)"
+1157601,biotech,Drugs (Biotechnology),NasdaqGS:MDGL,"Madrigal Pharmaceuticals, Inc. (NasdaqGS:MDGL)"
+1158223,biotech,Drugs (Biotechnology),OTCPK:AFFY,"Affymax, Inc. (OTCPK:AFFY)"
+1159036,biotech,Drugs (Biotechnology),NasdaqGS:HALO,"Halozyme Therapeutics, Inc. (NasdaqGS:HALO)"
+1160308,biotech,Drugs (Biotechnology),NasdaqGS:SVRA,Savara Inc. (NasdaqGS:SVRA)
+1163573,biotech,Drugs (Biotechnology),OTCPK:TXTM,"ProText Mobility, Inc. (OTCPK:TXTM)"
+1173313,biotech,Drugs (Biotechnology),NasdaqCM:ABVC,"ABVC BioPharma, Inc. (NasdaqCM:ABVC)"
+1174940,biotech,Drugs (Biotechnology),NYSEAM:OGEN,"Oragenics, Inc. (NYSEAM:OGEN)"
+1175680,biotech,Drugs (Biotechnology),OTCPK:CYDY,CytoDyn Inc. (OTCPK:CYDY)
+1177648,biotech,Drugs (Biotechnology),NasdaqGS:ENTA,"Enanta Pharmaceuticals, Inc. (NasdaqGS:ENTA)"
+1178670,biotech,Drugs (Biotechnology),NasdaqGS:ALNY,"Alnylam Pharmaceuticals, Inc. (NasdaqGS:ALNY)"
+1178879,biotech,Drugs (Biotechnology),NasdaqGM:FOLD,"Amicus Therapeutics, Inc. (NasdaqGM:FOLD)"
+1187953,biotech,Drugs (Biotechnology),NasdaqCM:CELZ,"Creative Medical Technology Holdings, Inc. (NasdaqCM:CELZ)"
+1191070,biotech,Drugs (Biotechnology),NasdaqGM:NEUP,Neuphoria Therapeutics Inc. (NasdaqGM:NEUP)
+1205922,biotech,Drugs (Biotechnology),OTCPK:VCNX,"Vaccinex, Inc. (OTCPK:VCNX)"
+1211583,biotech,Drugs (Biotechnology),NasdaqCM:FENC,Fennec Pharmaceuticals Inc. (NasdaqCM:FENC)
+1213037,biotech,Drugs (Biotechnology),NasdaqCM:CRDF,"Cardiff Oncology, Inc. (NasdaqCM:CRDF)"
+1213809,biotech,Drugs (Biotechnology),NasdaqCM:DYAI,"Dyadic International, Inc. (NasdaqCM:DYAI)"
+1217234,biotech,Drugs (Biotechnology),NasdaqGM:CDNA,"CareDx, Inc. (NasdaqGM:CDNA)"
+1226616,biotech,Drugs (Biotechnology),NasdaqGM:MNOV,"MediciNova, Inc. (NasdaqGM:MNOV)"
+1228627,biotech,Drugs (Biotechnology),NasdaqCM:IRD,"Opus Genetics, Inc. (NasdaqCM:IRD)"
+1231457,biotech,Drugs (Biotechnology),NasdaqCM:GNLX,Genelux Corporation (NasdaqCM:GNLX)
+1253689,biotech,Drugs (Biotechnology),NasdaqCM:CBIO,"Crescent Biopharma, Inc. (NasdaqCM:CBIO)"
+1262104,biotech,Drugs (Biotechnology),NasdaqCM:LITS,"Lite Strategy, Inc. (NasdaqCM:LITS)"
+1274737,biotech,Drugs (Biotechnology),NasdaqGM:XGN,Exagen Inc. (NasdaqGM:XGN)
+1279704,biotech,Drugs (Biotechnology),NasdaqCM:CLRB,"Cellectar Biosciences, Inc. (NasdaqCM:CLRB)"
+1280776,biotech,Drugs (Biotechnology),NasdaqGS:IMUX,"Immunic, Inc. (NasdaqGS:IMUX)"
+1281895,biotech,Drugs (Biotechnology),NasdaqGM:RCKT,"Rocket Pharmaceuticals, Inc. (NasdaqGM:RCKT)"
+1293818,biotech,Drugs (Biotechnology),OTCPK:OPGN,"OpGen, Inc. (OTCPK:OPGN)"
+1310291,biotech,Drugs (Biotechnology),OTCPK:BWVI,"Blue Water Ventures International, Inc. (OTCPK:BWVI)"
+1314052,biotech,Drugs (Biotechnology),NasdaqGS:AVXL,Anavex Life Sciences Corp. (NasdaqGS:AVXL)
+1318641,biotech,Drugs (Biotechnology),OTCPK:STAB,"Statera Biopharma, Inc. (OTCPK:STAB)"
+1326110,biotech,Drugs (Biotechnology),NasdaqGS:IBRX,"ImmunityBio, Inc. (NasdaqGS:IBRX)"
+1326190,biotech,Drugs (Biotechnology),NasdaqGM:ALT,"Altimmune, Inc. (NasdaqGM:ALT)"
+1326732,biotech,Drugs (Biotechnology),NasdaqGM:XNCR,"Xencor, Inc. (NasdaqGM:XNCR)"
+1335105,biotech,Drugs (Biotechnology),NasdaqCM:LIXT,"Lixte Biotechnology Holdings, Inc. (NasdaqCM:LIXT)"
+1339970,biotech,Drugs (Biotechnology),NasdaqCM:ATYR,"aTyr Pharma, Inc. (NasdaqCM:ATYR)"
+1341235,biotech,Drugs (Biotechnology),NasdaqCM:ALDX,"Aldeyra Therapeutics, Inc. (NasdaqCM:ALDX)"
+1347178,biotech,Drugs (Biotechnology),NasdaqGM:VNDA,Vanda Pharmaceuticals Inc. (NasdaqGM:VNDA)
+1347242,biotech,Drugs (Biotechnology),OTCPK:LIPO,Lipella Pharmaceuticals Inc. (OTCPK:LIPO)
+1348911,biotech,Drugs (Biotechnology),NasdaqGM:KALV,"KalVista Pharmaceuticals, Inc. (NasdaqGM:KALV)"
+1355250,biotech,Drugs (Biotechnology),OTCPK:IPIX,Innovation Pharmaceuticals Inc. (OTCPK:IPIX)
+1355790,biotech,Drugs (Biotechnology),OTCPK:ISCO,International Stem Cell Corporation (OTCPK:ISCO)
+1356090,biotech,Drugs (Biotechnology),NasdaqGS:PGEN,"Precigen, Inc. (NasdaqGS:PGEN)"
+1357459,biotech,Drugs (Biotechnology),NasdaqCM:PALI,"Palisade Bio, Inc. (NasdaqCM:PALI)"
+1357874,biotech,Drugs (Biotechnology),NasdaqCM:DTIL,"Precision BioSciences, Inc. (NasdaqCM:DTIL)"
+1359931,biotech,Drugs (Biotechnology),NasdaqGM:TARA,"Protara Therapeutics, Inc. (NasdaqGM:TARA)"
+1367644,biotech,Drugs (Biotechnology),NYSE:EBS,Emergent BioSolutions Inc. (NYSE:EBS)
+1368514,biotech,Drugs (Biotechnology),NasdaqGM:ADMA,"ADMA Biologics, Inc. (NasdaqGM:ADMA)"
+1370053,biotech,Drugs (Biotechnology),NasdaqGS:ANAB,"AnaptysBio, Inc. (NasdaqGS:ANAB)"
+1372299,biotech,Drugs (Biotechnology),NasdaqCM:OCGN,"Ocugen, Inc. (NasdaqCM:OCGN)"
+1374690,biotech,Drugs (Biotechnology),NasdaqGM:LRMR,"Larimar Therapeutics, Inc. (NasdaqGM:LRMR)"
+1376339,biotech,Drugs (Biotechnology),NasdaqCM:MDXG,"MiMedx Group, Inc. (NasdaqCM:MDXG)"
+1377121,biotech,Drugs (Biotechnology),NasdaqGM:PTGX,"Protagonist Therapeutics, Inc. (NasdaqGM:PTGX)"
+1379006,biotech,Drugs (Biotechnology),NYSEAM:NNVC,"NanoViricides, Inc. (NYSEAM:NNVC)"
+1382101,biotech,Drugs (Biotechnology),NasdaqGM:STRO,"Sutro Biopharma, Inc. (NasdaqGM:STRO)"
+1384101,biotech,Drugs (Biotechnology),NasdaqGM:VCYT,"Veracyte, Inc. (NasdaqGM:VCYT)"
+1388320,biotech,Drugs (Biotechnology),NYSEAM:ATNM,"Actinium Pharmaceuticals, Inc. (NYSEAM:ATNM)"
+1388490,biotech,Drugs (Biotechnology),OTCPK:MBCI,"MabCure, Inc. (OTCPK:MBCI)"
+1390478,biotech,Drugs (Biotechnology),NasdaqCM:SLS,"SELLAS Life Sciences Group, Inc. (NasdaqCM:SLS)"
+1395937,biotech,Drugs (Biotechnology),NasdaqGS:SNDX,"Syndax Pharmaceuticals, Inc. (NasdaqGS:SNDX)"
+1400118,biotech,Drugs (Biotechnology),NasdaqGM:SGMT,Sagimet Biosciences Inc. (NasdaqGM:SGMT)
+1401040,biotech,Drugs (Biotechnology),NasdaqCM:DMAC,DiaMedica Therapeutics Inc. (NasdaqCM:DMAC)
+1401667,biotech,Drugs (Biotechnology),NasdaqGS:PBYI,"Puma Biotechnology, Inc. (NasdaqGS:PBYI)"
+1402328,biotech,Drugs (Biotechnology),NasdaqCM:SBFM,"Sunshine Biopharma, Inc. (NasdaqCM:SBFM)"
+1404281,biotech,Drugs (Biotechnology),NasdaqCM:ELDN,"Eledon Pharmaceuticals, Inc. (NasdaqCM:ELDN)"
+1404644,biotech,Drugs (Biotechnology),NasdaqGM:NGNE,Neurogene Inc. (NasdaqGM:NGNE)
+1411685,biotech,Drugs (Biotechnology),NasdaqCM:VTGN,"Vistagen Therapeutics, Inc. (NasdaqCM:VTGN)"
+1419041,biotech,Drugs (Biotechnology),NasdaqCM:FBRX,"Forte Biosciences, Inc. (NasdaqCM:FBRX)"
+1419554,biotech,Drugs (Biotechnology),NasdaqCM:BBLG,Bone Biologics Corporation (NasdaqCM:BBLG)
+1420565,biotech,Drugs (Biotechnology),NasdaqCM:RNTX,Rein Therapeutics Inc. (NasdaqCM:RNTX)
+1420720,biotech,Drugs (Biotechnology),NasdaqCM:IBIO,"iBio, Inc. (NasdaqCM:IBIO)"
+1421851,biotech,Drugs (Biotechnology),OTCPK:ENZC,"Enzolytics, Inc. (OTCPK:ENZC)"
+1422142,biotech,Drugs (Biotechnology),NasdaqCM:WHWK,"Whitehawk Therapeutics, Inc. (NasdaqCM:WHWK)"
+1422143,biotech,Drugs (Biotechnology),NasdaqGS:KURA,"Kura Oncology, Inc. (NasdaqGS:KURA)"
+1425205,biotech,Drugs (Biotechnology),NasdaqGM:IOVA,"Iovance Biotherapeutics, Inc. (NasdaqGM:IOVA)"
+1426800,biotech,Drugs (Biotechnology),NasdaqGS:ASMB,"Assembly Biosciences, Inc. (NasdaqGS:ASMB)"
+1429260,biotech,Drugs (Biotechnology),NasdaqCM:FBIO,"Fortress Biotech, Inc. (NasdaqCM:FBIO)"
+1429560,biotech,Drugs (Biotechnology),OTCPK:TRVN,"Trevena, Inc. (OTCPK:TRVN)"
+1430306,biotech,Drugs (Biotechnology),NasdaqCM:TNXP,Tonix Pharmaceuticals Holding Corp. (NasdaqCM:TNXP)
+1434316,biotech,Drugs (Biotechnology),NasdaqGM:FATE,"Fate Therapeutics, Inc. (NasdaqGM:FATE)"
+1437402,biotech,Drugs (Biotechnology),NasdaqGM:ARDX,"Ardelyx, Inc. (NasdaqGM:ARDX)"
+1438533,biotech,Drugs (Biotechnology),NasdaqGM:TVTX,"Travere Therapeutics, Inc. (NasdaqGM:TVTX)"
+1439222,biotech,Drugs (Biotechnology),NasdaqGS:AGIO,"Agios Pharmaceuticals, Inc. (NasdaqGS:AGIO)"
+1442836,biotech,Drugs (Biotechnology),NasdaqGS:MRSN,"Mersana Therapeutics, Inc. (NasdaqGS:MRSN)"
+1445815,biotech,Drugs (Biotechnology),OTCPK:BIXT,"Bioxytran, Inc. (OTCPK:BIXT)"
+1446847,biotech,Drugs (Biotechnology),NasdaqGS:IRWD,"Ironwood Pharmaceuticals, Inc. (NasdaqGS:IRWD)"
+1447028,biotech,Drugs (Biotechnology),NasdaqGS:ABUS,Arbutus Biopharma Corporation (NasdaqGS:ABUS)
+1453687,biotech,Drugs (Biotechnology),NasdaqGM:RNAC,"Cartesian Therapeutics, Inc. (NasdaqGM:RNAC)"
+1454789,biotech,Drugs (Biotechnology),NasdaqGM:ATXS,"Astria Therapeutics, Inc. (NasdaqGM:ATXS)"
+1459450,biotech,Drugs (Biotechnology),OTCPK:MYRX,"Myrexis, Inc. (OTCPK:MYRX)"
+1460602,biotech,Drugs (Biotechnology),OTCPK:ORGS,Orgenesis Inc. (OTCPK:ORGS)
+1460702,biotech,Drugs (Biotechnology),NasdaqCM:AIXC,"AIxCrypto Holdings, Inc. (NasdaqCM:AIXC)"
+1468748,biotech,Drugs (Biotechnology),NasdaqGM:KOD,Kodiak Sciences Inc. (NasdaqGM:KOD)
+1472012,biotech,Drugs (Biotechnology),NasdaqCM:IMNM,"Immunome, Inc. (NasdaqCM:IMNM)"
+1472091,biotech,Drugs (Biotechnology),NasdaqCM:PDSB,PDS Biotechnology Corporation (NasdaqCM:PDSB)
+1476963,biotech,Drugs (Biotechnology),OTCPK:SCPX,"Scorpius Holdings, Inc. (OTCPK:SCPX)"
+1477845,biotech,Drugs (Biotechnology),NYSE:ANVS,"Annovis Bio, Inc. (NYSE:ANVS)"
+1479419,biotech,Drugs (Biotechnology),NasdaqCM:KALA,"KALA BIO, Inc. (NasdaqCM:KALA)"
+1484565,biotech,Drugs (Biotechnology),NasdaqCM:SLNO,"Soleno Therapeutics, Inc. (NasdaqCM:SLNO)"
+1485003,biotech,Drugs (Biotechnology),OTCPK:CARM,"Carisma Therapeutics, Inc. (OTCPK:CARM)"
+1488039,biotech,Drugs (Biotechnology),NasdaqCM:ATOS,"Atossa Therapeutics, Inc. (NasdaqCM:ATOS)"
+1492422,biotech,Drugs (Biotechnology),NasdaqGS:APLS,"Apellis Pharmaceuticals, Inc. (NasdaqGS:APLS)"
+1492674,biotech,Drugs (Biotechnology),OTCPK:TTOO,"T2 Biosystems, Inc. (OTCPK:TTOO)"
+1497253,biotech,Drugs (Biotechnology),NasdaqCM:VIVS,"VivoSim Labs, Inc. (NasdaqCM:VIVS)"
+1498382,biotech,Drugs (Biotechnology),NasdaqCM:HURA,"TuHURA Biosciences, Inc. (NasdaqCM:HURA)"
+1501697,biotech,Drugs (Biotechnology),NasdaqCM:XFOR,"X4 Pharmaceuticals, Inc. (NasdaqCM:XFOR)"
+1501796,biotech,Drugs (Biotechnology),NasdaqGM:AURA,"Aura Biosciences, Inc. (NasdaqGM:AURA)"
+1501989,biotech,Drugs (Biotechnology),NasdaqGS:CTMX,"CytomX Therapeutics, Inc. (NasdaqGS:CTMX)"
+1503802,biotech,Drugs (Biotechnology),NasdaqGS:KPTI,Karyopharm Therapeutics Inc. (NasdaqGS:KPTI)
+1505497,biotech,Drugs (Biotechnology),NasdaqCM:BRTX,"BioRestorative Therapies, Inc. (NasdaqCM:BRTX)"
+1509261,biotech,Drugs (Biotechnology),NasdaqCM:RZLT,"Rezolute, Inc. (NasdaqCM:RZLT)"
+1509745,biotech,Drugs (Biotechnology),NasdaqCM:CYPH,Cypherpunk Technologies Inc. (NasdaqCM:CYPH)
+1512762,biotech,Drugs (Biotechnology),NasdaqGM:CHRS,"Coherus Oncology, Inc. (NasdaqGM:CHRS)"
+1514183,biotech,Drugs (Biotechnology),NasdaqCM:SILO,"Silo Pharma, Inc. (NasdaqCM:SILO)"
+1514946,biotech,Drugs (Biotechnology),OTCPK:AXIM,"AXIM Biotechnologies, Inc. (OTCPK:AXIM)"
+1515673,biotech,Drugs (Biotechnology),NasdaqGS:RARE,Ultragenyx Pharmaceutical Inc. (NasdaqGS:RARE)
+1515740,biotech,Drugs (Biotechnology),OTCPK:BIEI,"Premier Biomedical, Inc. (OTCPK:BIEI)"
+1516551,biotech,Drugs (Biotechnology),NasdaqGM:SKYE,"Skye Bioscience, Inc. (NasdaqGM:SKYE)"
+1517022,biotech,Drugs (Biotechnology),NasdaqCM:AKBA,"Akebia Therapeutics, Inc. (NasdaqCM:AKBA)"
+1526119,biotech,Drugs (Biotechnology),NasdaqCM:VSTM,"Verastem, Inc. (NasdaqCM:VSTM)"
+1527599,biotech,Drugs (Biotechnology),NasdaqCM:SYBX,"Synlogic, Inc. (NasdaqCM:SYBX)"
+1527728,biotech,Drugs (Biotechnology),NasdaqCM:LNAI,Lunai Bioworks Inc. (NasdaqCM:LNAI)
+1528115,biotech,Drugs (Biotechnology),NasdaqGS:ANNX,"Annexon, Inc. (NasdaqGS:ANNX)"
+1528172,biotech,Drugs (Biotechnology),OTCPK:ENDV,"Endonovo Therapeutics, Inc. (OTCPK:ENDV)"
+1533040,biotech,Drugs (Biotechnology),NasdaqCM:PHIO,Phio Pharmaceuticals Corp. (NasdaqCM:PHIO)
+1534120,biotech,Drugs (Biotechnology),NasdaqCM:AVTX,"Avalo Therapeutics, Inc. (NasdaqCM:AVTX)"
+1534525,biotech,Drugs (Biotechnology),NasdaqCM:XBIO,"Xenetic Biosciences, Inc. (NasdaqCM:XBIO)"
+1534969,biotech,Drugs (Biotechnology),NasdaqGM:SERA,"Sera Prognostics, Inc. (NasdaqGM:SERA)"
+1544227,biotech,Drugs (Biotechnology),NasdaqCM:TPST,"Tempest Therapeutics, Inc. (NasdaqCM:TPST)"
+1549595,biotech,Drugs (Biotechnology),NasdaqGM:NRIX,"Nurix Therapeutics, Inc. (NasdaqGM:NRIX)"
+1551152,biotech,Drugs (Biotechnology),NYSE:ABBV,AbbVie Inc. (NYSE:ABBV)
+1557376,biotech,Drugs (Biotechnology),OTCPK:ZEOX,"Zeo ScientifiX, Inc. (OTCPK:ZEOX)"
+1559356,biotech,Drugs (Biotechnology),OTCPK:BTAX,Biostax Corp. (OTCPK:BTAX)
+1563577,biotech,Drugs (Biotechnology),OTCPK:GRTX,"Galera Therapeutics, Inc. (OTCPK:GRTX)"
+1563665,biotech,Drugs (Biotechnology),OTCPK:HRGN,Harvard Apparatus Regenerative Technology Inc. (OTCPK:HRGN)
+1567264,biotech,Drugs (Biotechnology),NasdaqCM:INTS,"Intensity Therapeutics, Inc. (NasdaqCM:INTS)"
+1569340,biotech,Drugs (Biotechnology),OTCPK:CLCS,"Cell Source, Inc. (OTCPK:CLCS)"
+1574094,biotech,Drugs (Biotechnology),NasdaqCM:RNXT,"RenovoRx, Inc. (NasdaqCM:RNXT)"
+1576885,biotech,Drugs (Biotechnology),NasdaqGS:ABOS,"Acumen Pharmaceuticals, Inc. (NasdaqGS:ABOS)"
+1580149,biotech,Drugs (Biotechnology),NasdaqCM:BIVI,BioVie Inc. (NasdaqCM:BIVI)
+1581280,biotech,Drugs (Biotechnology),NasdaqGS:TWST,Twist Bioscience Corporation (NasdaqGS:TWST)
+1582249,biotech,Drugs (Biotechnology),OTCPK:RASP,"Actavia Life Sciences, Inc. (OTCPK:RASP)"
+1582554,biotech,Drugs (Biotechnology),NYSEAM:MTNB,"Matinas BioPharma Holdings, Inc. (NYSEAM:MTNB)"
+1583648,biotech,Drugs (Biotechnology),NasdaqCM:PVLA,"Palvella Therapeutics, Inc. (NasdaqCM:PVLA)"
+1589150,biotech,Drugs (Biotechnology),OTCPK:RGBP,"Regen BioPharma, Inc. (OTCPK:RGBP)"
+1590750,biotech,Drugs (Biotechnology),NasdaqCM:VRDN,"Viridian Therapeutics, Inc. (NasdaqCM:VRDN)"
+1590877,biotech,Drugs (Biotechnology),NasdaqGS:RGNX,REGENXBIO Inc. (NasdaqGS:RGNX)
+1595097,biotech,Drugs (Biotechnology),NasdaqCM:CRBP,"Corbus Pharmaceuticals Holdings, Inc. (NasdaqCM:CRBP)"
+1595248,biotech,Drugs (Biotechnology),NasdaqCM:GNPX,"Genprex, Inc. (NasdaqCM:GNPX)"
+1596062,biotech,Drugs (Biotechnology),OTCPK:QBIO,Q BioMed Inc. (OTCPK:QBIO)
+1598646,biotech,Drugs (Biotechnology),NasdaqCM:NERV,"Minerva Neurosciences, Inc. (NasdaqCM:NERV)"
+1599298,biotech,Drugs (Biotechnology),NasdaqGM:SMMT,Summit Therapeutics Inc. (NasdaqGM:SMMT)
+1601485,biotech,Drugs (Biotechnology),NasdaqCM:ELTX,"Elicio Therapeutics, Inc. (NasdaqCM:ELTX)"
+1601830,biotech,Drugs (Biotechnology),NasdaqGS:RXRX,"Recursion Pharmaceuticals, Inc. (NasdaqGS:RXRX)"
+1603345,biotech,Drugs (Biotechnology),OTCPK:AGTX,Agentix Corp. (OTCPK:AGTX)
+1603454,biotech,Drugs (Biotechnology),NasdaqCM:CELC,Celcuity Inc. (NasdaqCM:CELC)
+1603978,biotech,Drugs (Biotechnology),NasdaqCM:AQB,"AquaBounty Technologies, Inc. (NasdaqCM:AQB)"
+1604464,biotech,Drugs (Biotechnology),NasdaqGS:ATRA,"Atara Biotherapeutics, Inc. (NasdaqGS:ATRA)"
+1604477,biotech,Drugs (Biotechnology),OTCPK:SQZB,SQZ Biotechnologies Company (OTCPK:SQZB)
+1604821,biotech,Drugs (Biotechnology),NasdaqGS:NTRA,"Natera, Inc. (NasdaqGS:NTRA)"
+1607678,biotech,Drugs (Biotechnology),NasdaqCM:VKTX,"Viking Therapeutics, Inc. (NasdaqCM:VKTX)"
+1609809,biotech,Drugs (Biotechnology),NasdaqGS:MCRB,"Seres Therapeutics, Inc. (NasdaqGS:MCRB)"
+1610618,biotech,Drugs (Biotechnology),NasdaqCM:CDTX,"Cidara Therapeutics, Inc. (NasdaqCM:CDTX)"
+1614067,biotech,Drugs (Biotechnology),OTCPK:ARDS,"Aridis Pharmaceuticals, Inc. (OTCPK:ARDS)"
+1615219,biotech,Drugs (Biotechnology),NasdaqCM:SLRX,"Salarius Pharmaceuticals, Inc. (NasdaqCM:SLRX)"
+1619856,biotech,Drugs (Biotechnology),NasdaqGS:CRBU,"Caribou Biosciences, Inc. (NasdaqGS:CRBU)"
+1622057,biotech,Drugs (Biotechnology),OTCPK:NBIO,"Nascent Biotech, Inc. (OTCPK:NBIO)"
+1622229,biotech,Drugs (Biotechnology),NasdaqGS:COGT,"Cogent Biosciences, Inc. (NasdaqGS:COGT)"
+1623526,biotech,Drugs (Biotechnology),NasdaqGS:STOK,"Stoke Therapeutics, Inc. (NasdaqGS:STOK)"
+1626878,biotech,Drugs (Biotechnology),NasdaqGS:XBIT,XBiotech Inc. (NasdaqGS:XBIT)
+1626971,biotech,Drugs (Biotechnology),NasdaqGM:CRVS,"Corvus Pharmaceuticals, Inc. (NasdaqGM:CRVS)"
+1628171,biotech,Drugs (Biotechnology),NasdaqGS:RVMD,"Revolution Medicines, Inc. (NasdaqGS:RVMD)"
+1636282,biotech,Drugs (Biotechnology),NasdaqGS:SYRE,"Spyre Therapeutics, Inc. (NasdaqGS:SYRE)"
+1636651,biotech,Drugs (Biotechnology),NasdaqCM:OVID,Ovid Therapeutics Inc. (NasdaqCM:OVID)
+1637715,biotech,Drugs (Biotechnology),NasdaqGM:OKUR,"OnKure Therapeutics, Inc. (NasdaqGM:OKUR)"
+1638287,biotech,Drugs (Biotechnology),NasdaqCM:MTVA,MetaVia Inc. (NasdaqCM:MTVA)
+1640266,biotech,Drugs (Biotechnology),NasdaqGS:VYGR,"Voyager Therapeutics, Inc. (NasdaqGS:VYGR)"
+1641281,biotech,Drugs (Biotechnology),NasdaqCM:BOLT,"Bolt Biotherapeutics, Inc. (NasdaqCM:BOLT)"
+1641489,biotech,Drugs (Biotechnology),NasdaqCM:VTVT,vTv Therapeutics Inc. (NasdaqCM:VTVT)
+1642380,biotech,Drugs (Biotechnology),NasdaqCM:IMDX,Insight Molecular Diagnostics Inc. (NasdaqCM:IMDX)
+1645460,biotech,Drugs (Biotechnology),NasdaqCM:CUE,"Cue Biopharma, Inc. (NasdaqCM:CUE)"
+1645469,biotech,Drugs (Biotechnology),NasdaqCM:MNPR,Monopar Therapeutics Inc. (NasdaqCM:MNPR)
+1645666,biotech,Drugs (Biotechnology),NasdaqCM:KZR,"Kezar Life Sciences, Inc. (NasdaqCM:KZR)"
+1649094,biotech,Drugs (Biotechnology),NasdaqGS:PCVX,"Vaxcyte, Inc. (NasdaqGS:PCVX)"
+1649904,biotech,Drugs (Biotechnology),NasdaqGM:RYTM,"Rhythm Pharmaceuticals, Inc. (NasdaqGM:RYTM)"
+1649989,biotech,Drugs (Biotechnology),NasdaqCM:OTLK,"Outlook Therapeutics, Inc. (NasdaqCM:OTLK)"
+1650648,biotech,Drugs (Biotechnology),NasdaqGS:FDMT,"4D Molecular Therapeutics, Inc. (NasdaqGS:FDMT)"
+1650664,biotech,Drugs (Biotechnology),NasdaqGS:EDIT,"Editas Medicine, Inc. (NasdaqGS:EDIT)"
+1652130,biotech,Drugs (Biotechnology),NasdaqGM:NTLA,"Intellia Therapeutics, Inc. (NasdaqGM:NTLA)"
+1652935,biotech,Drugs (Biotechnology),NasdaqGM:ACTU,"Actuate Therapeutics, Inc. (NasdaqGM:ACTU)"
+1653087,biotech,Drugs (Biotechnology),NasdaqGS:ALEC,"Alector, Inc. (NasdaqGS:ALEC)"
+1659617,biotech,Drugs (Biotechnology),NasdaqCM:MBRX,"Moleculin Biotech, Inc. (NasdaqCM:MBRX)"
+1661059,biotech,Drugs (Biotechnology),NasdaqGS:NXTC,"NextCure, Inc. (NasdaqGS:NXTC)"
+1661181,biotech,Drugs (Biotechnology),NasdaqCM:ORGO,Organogenesis Holdings Inc. (NasdaqCM:ORGO)
+1661998,biotech,Drugs (Biotechnology),NasdaqCM:QTTB,Q32 Bio Inc. (NasdaqCM:QTTB)
+1662579,biotech,Drugs (Biotechnology),NasdaqGS:CCCC,"C4 Therapeutics, Inc. (NasdaqGS:CCCC)"
+1662774,biotech,Drugs (Biotechnology),NasdaqGS:QNCX,"Quince Therapeutics, Inc. (NasdaqGS:QNCX)"
+1663038,biotech,Drugs (Biotechnology),OTCPK:QTZM,Quantumzyme Corp. (OTCPK:QTZM)
+1664710,biotech,Drugs (Biotechnology),NasdaqGM:KROS,"Keros Therapeutics, Inc. (NasdaqGM:KROS)"
+1668243,biotech,Drugs (Biotechnology),NasdaqGM:URGN,UroGen Pharma Ltd. (NasdaqGM:URGN)
+1671584,biotech,Drugs (Biotechnology),NasdaqCM:APVO,Aptevo Therapeutics Inc. (NasdaqCM:APVO)
+1671858,biotech,Drugs (Biotechnology),NasdaqGM:SPRY,"ARS Pharmaceuticals, Inc. (NasdaqGM:SPRY)"
+1672688,biotech,Drugs (Biotechnology),NasdaqGS:ABSI,Absci Corporation (NasdaqGS:ABSI)
+1676725,biotech,Drugs (Biotechnology),NasdaqGS:IDYA,"IDEAYA Biosciences, Inc. (NasdaqGS:IDYA)"
+1677077,biotech,Drugs (Biotechnology),NasdaqCM:ALZN,"Alzamend Neuro, Inc. (NasdaqCM:ALZN)"
+1677940,biotech,Drugs (Biotechnology),NasdaqCM:BYSI,BeyondSpring Inc. (NasdaqCM:BYSI)
+1678660,biotech,Drugs (Biotechnology),NasdaqGS:PRLD,Prelude Therapeutics Incorporated (NasdaqGS:PRLD)
+1680048,biotech,Drugs (Biotechnology),NasdaqCM:MBIO,"Mustang Bio, Inc. (NasdaqCM:MBIO)"
+1680367,biotech,Drugs (Biotechnology),NasdaqGS:STTK,"Shattuck Labs, Inc. (NasdaqGS:STTK)"
+1681087,biotech,Drugs (Biotechnology),NasdaqGM:TECX,"Tectonic Therapeutic, Inc. (NasdaqGM:TECX)"
+1682852,biotech,Drugs (Biotechnology),NasdaqGS:MRNA,"Moderna, Inc. (NasdaqGS:MRNA)"
+1683553,biotech,Drugs (Biotechnology),NasdaqCM:SPRB,"Spruce Biosciences, Inc. (NasdaqCM:SPRB)"
+1689375,biotech,Drugs (Biotechnology),NasdaqGM:TRDA,"Entrada Therapeutics, Inc. (NasdaqGM:TRDA)"
+1689548,biotech,Drugs (Biotechnology),NasdaqGS:PRAX,"Praxis Precision Medicines, Inc. (NasdaqGS:PRAX)"
+1690080,biotech,Drugs (Biotechnology),NasdaqCM:ETHZ,ETHZilla Corporation (NasdaqCM:ETHZ)
+1690585,biotech,Drugs (Biotechnology),NasdaqCM:DNTH,"Dianthus Therapeutics, Inc. (NasdaqCM:DNTH)"
+1697532,biotech,Drugs (Biotechnology),NasdaqCM:APLT,"Applied Therapeutics, Inc. (NasdaqCM:APLT)"
+1698530,biotech,Drugs (Biotechnology),NasdaqCM:XCUR,"Exicure, Inc. (NasdaqCM:XCUR)"
+1699031,biotech,Drugs (Biotechnology),NasdaqGS:GRAL,"GRAIL, Inc. (NasdaqGS:GRAL)"
+1699382,biotech,Drugs (Biotechnology),NasdaqGS:PMVP,"PMV Pharmaceuticals, Inc. (NasdaqGS:PMVP)"
+1701108,biotech,Drugs (Biotechnology),NasdaqGS:SPRO,"Spero Therapeutics, Inc. (NasdaqGS:SPRO)"
+1701478,biotech,Drugs (Biotechnology),NYSEAM:AZTR,"Azitra, Inc. (NYSEAM:AZTR)"
+1701541,biotech,Drugs (Biotechnology),NasdaqGS:BDTX,"Black Diamond Therapeutics, Inc. (NasdaqGS:BDTX)"
+1703647,biotech,Drugs (Biotechnology),NasdaqCM:KRRO,"Korro Bio, Inc. (NasdaqCM:KRRO)"
+1705843,biotech,Drugs (Biotechnology),NasdaqCM:CBUS,"Cibus, Inc. (NasdaqCM:CBUS)"
+1706431,biotech,Drugs (Biotechnology),NasdaqGS:VIR,"Vir Biotechnology, Inc. (NasdaqGS:VIR)"
+1707502,biotech,Drugs (Biotechnology),NasdaqGS:SLDB,Solid Biosciences Inc. (NasdaqGS:SLDB)
+1708527,biotech,Drugs (Biotechnology),NasdaqCM:ELUT,Elutia Inc. (NasdaqCM:ELUT)
+1708599,biotech,Drugs (Biotechnology),NYSEAM:SER,"Serina Therapeutics, Inc. (NYSEAM:SER)"
+1711279,biotech,Drugs (Biotechnology),NasdaqGS:KRYS,"Krystal Biotech, Inc. (NasdaqGS:KRYS)"
+1711754,biotech,Drugs (Biotechnology),NasdaqCM:INMB,"INmune Bio, Inc. (NasdaqCM:INMB)"
+1712762,biotech,Drugs (Biotechnology),NasdaqCM:BIAF,"bioAffinity Technologies, Inc. (NasdaqCM:BIAF)"
+1714899,biotech,Drugs (Biotechnology),NasdaqGS:DNLI,Denali Therapeutics Inc. (NasdaqGS:DNLI)
+1716947,biotech,Drugs (Biotechnology),NasdaqCM:ENSC,"Ensysce Biosciences, Inc. (NasdaqCM:ENSC)"
+1720580,biotech,Drugs (Biotechnology),NasdaqCM:ACET,"Adicet Bio, Inc. (NasdaqCM:ACET)"
+1720893,biotech,Drugs (Biotechnology),NasdaqCM:BTAI,"BioXcel Therapeutics, Inc. (NasdaqCM:BTAI)"
+1721484,biotech,Drugs (Biotechnology),NasdaqCM:LGVN,Longeveron Inc. (NasdaqCM:LGVN)
+1724521,biotech,Drugs (Biotechnology),NYSE:RCUS,"Arcus Biosciences, Inc. (NYSE:RCUS)"
+1725160,biotech,Drugs (Biotechnology),NasdaqGM:ZNTL,"Zentalis Pharmaceuticals, Inc. (NasdaqGM:ZNTL)"
+1726711,biotech,Drugs (Biotechnology),NasdaqCM:ADTX,"Aditxt, Inc. (NasdaqCM:ADTX)"
+1727196,biotech,Drugs (Biotechnology),NasdaqGS:SRRK,Scholar Rock Holding Corporation (NasdaqGS:SRRK)
+1728117,biotech,Drugs (Biotechnology),NasdaqGS:GOSS,"Gossamer Bio, Inc. (NasdaqGS:GOSS)"
+1729944,biotech,Drugs (Biotechnology),OTCPK:BACK,"IMAC Holdings, Inc. (OTCPK:BACK)"
+1733257,biotech,Drugs (Biotechnology),OTCPK:FNCH,"Finch Therapeutics Group, Inc. (OTCPK:FNCH)"
+1735438,biotech,Drugs (Biotechnology),NasdaqGS:MGTX,MeiraGTx Holdings plc (NasdaqGS:MGTX)
+1736243,biotech,Drugs (Biotechnology),NasdaqCM:ACXP,"Acurx Pharmaceuticals, Inc. (NasdaqCM:ACXP)"
+1736730,biotech,Drugs (Biotechnology),NasdaqGM:CAMP,Camp4 Therapeutics Corporation (NasdaqGM:CAMP)
+1737287,biotech,Drugs (Biotechnology),NasdaqGS:ALLO,"Allogene Therapeutics, Inc. (NasdaqGS:ALLO)"
+1737953,biotech,Drugs (Biotechnology),NasdaqGS:REPL,"Replimune Group, Inc. (NasdaqGS:REPL)"
+1738021,biotech,Drugs (Biotechnology),NasdaqCM:CMPX,"Compass Therapeutics, Inc. (NasdaqCM:CMPX)"
+1739410,biotech,Drugs (Biotechnology),NasdaqCM:RLYB,Rallybio Corporation (NasdaqCM:RLYB)
+1740279,biotech,Drugs (Biotechnology),NasdaqCM:INAB,"IN8bio, Inc. (NasdaqCM:INAB)"
+1743881,biotech,Drugs (Biotechnology),NasdaqGS:BBIO,"BridgeBio Pharma, Inc. (NasdaqGS:BBIO)"
+1745999,biotech,Drugs (Biotechnology),NasdaqGS:BEAM,Beam Therapeutics Inc. (NasdaqGS:BEAM)
+1746466,biotech,Drugs (Biotechnology),NasdaqCM:EQ,"Equillium, Inc. (NasdaqCM:EQ)"
+1750149,biotech,Drugs (Biotechnology),NasdaqCM:IKT,"Inhibikase Therapeutics, Inc. (NasdaqCM:IKT)"
+1750284,biotech,Drugs (Biotechnology),NasdaqGS:OLMA,"Olema Pharmaceuticals, Inc. (NasdaqGS:OLMA)"
+1752828,biotech,Drugs (Biotechnology),NasdaqCM:CELU,Celularity Inc. (NasdaqCM:CELU)
+1754068,biotech,Drugs (Biotechnology),NasdaqGM:KLRS,"Kalaris Therapeutics, Inc. (NasdaqGM:KLRS)"
+1755237,biotech,Drugs (Biotechnology),NasdaqCM:CYCN,"Cyclerion Therapeutics, Inc. (NasdaqCM:CYCN)"
+1757499,biotech,Drugs (Biotechnology),NasdaqCM:SHPH,"Shuttle Pharmaceuticals Holdings, Inc. (NasdaqCM:SHPH)"
+1759138,biotech,Drugs (Biotechnology),NasdaqGS:CABA,"Cabaletta Bio, Inc. (NasdaqGS:CABA)"
+1759186,biotech,Drugs (Biotechnology),NasdaqCM:COEP,"Coeptis Therapeutics Holdings, Inc. (NasdaqCM:COEP)"
+1759425,biotech,Drugs (Biotechnology),NasdaqGM:MIRM,"Mirum Pharmaceuticals, Inc. (NasdaqGM:MIRM)"
+1760542,biotech,Drugs (Biotechnology),OTCPK:HOOK,HOOKIPA Pharma Inc. (OTCPK:HOOK)
+1761918,biotech,Drugs (Biotechnology),NasdaqGS:ERAS,"Erasca, Inc. (NasdaqGS:ERAS)"
+1762303,biotech,Drugs (Biotechnology),NasdaqCM:RCEL,"AVITA Medical, Inc. (NasdaqCM:RCEL)"
+1763950,biotech,Drugs (Biotechnology),NasdaqCM:LTRN,Lantern Pharma Inc. (NasdaqCM:LTRN)
+1764013,biotech,Drugs (Biotechnology),NasdaqGS:IMVT,"Immunovant, Inc. (NasdaqGS:IMVT)"
+1766140,biotech,Drugs (Biotechnology),NasdaqCM:UNCY,"Unicycive Therapeutics, Inc. (NasdaqCM:UNCY)"
+1768224,biotech,Drugs (Biotechnology),NasdaqGM:ARCT,Arcturus Therapeutics Holdings Inc. (NasdaqGM:ARCT)
+1768446,biotech,Drugs (Biotechnology),NasdaqGM:CLYM,"Climb Bio, Inc. (NasdaqGM:CLYM)"
+1770069,biotech,Drugs (Biotechnology),NasdaqGS:MPLT,"MapLight Therapeutics, Inc. (NasdaqGS:MPLT)"
+1770121,biotech,Drugs (Biotechnology),NasdaqGS:SANA,"Sana Biotechnology, Inc. (NasdaqGS:SANA)"
+1772028,biotech,Drugs (Biotechnology),OTCPK:SCPS,Scopus BioPharma Inc. (OTCPK:SCPS)
+1781174,biotech,Drugs (Biotechnology),NasdaqGM:ACRV,"Acrivon Therapeutics, Inc. (NasdaqGM:ACRV)"
+1781983,biotech,Drugs (Biotechnology),NasdaqCM:APRE,"Aprea Therapeutics, Inc. (NasdaqCM:APRE)"
+1782107,biotech,Drugs (Biotechnology),NasdaqCM:ONCO,"Onconetix, Inc. (NasdaqCM:ONCO)"
+1782223,biotech,Drugs (Biotechnology),NasdaqGS:PYXS,"Pyxis Oncology, Inc. (NasdaqGS:PYXS)"
+1782303,biotech,Drugs (Biotechnology),NasdaqGS:BOLD,"Boundless Bio, Inc. (NasdaqGS:BOLD)"
+1783328,biotech,Drugs (Biotechnology),NasdaqGM:TCRX,"TScan Therapeutics, Inc. (NasdaqGM:TCRX)"
+1785279,biotech,Drugs (Biotechnology),NasdaqGS:MGX,"Metagenomi, Inc. (NasdaqGS:MGX)"
+1785530,biotech,Drugs (Biotechnology),NasdaqGS:HOWL,"Werewolf Therapeutics, Inc. (NasdaqGS:HOWL)"
+1786205,biotech,Drugs (Biotechnology),NasdaqGS:ACLX,"Arcellx, Inc. (NasdaqGS:ACLX)"
+1787297,biotech,Drugs (Biotechnology),NasdaqCM:PASG,"Passage Bio, Inc. (NasdaqCM:PASG)"
+1787306,biotech,Drugs (Biotechnology),NasdaqGS:ARQT,"Arcutis Biotherapeutics, Inc. (NasdaqGS:ARQT)"
+1787400,biotech,Drugs (Biotechnology),NasdaqGS:NKTX,"Nkarta, Inc. (NasdaqGS:NKTX)"
+1788028,biotech,Drugs (Biotechnology),NasdaqCM:JSPR,"Jasper Therapeutics, Inc. (NasdaqCM:JSPR)"
+1789769,biotech,Drugs (Biotechnology),NasdaqCM:TIL,"Instil Bio, Inc. (NasdaqCM:TIL)"
+1789972,biotech,Drugs (Biotechnology),NasdaqGS:CGEM,"Cullinan Therapeutics, Inc. (NasdaqGS:CGEM)"
+1790340,biotech,Drugs (Biotechnology),NasdaqGM:IMRX,Immuneering Corporation (NasdaqGM:IMRX)
+1792941,biotech,Drugs (Biotechnology),OTCPK:GNVR,Genvor Incorporated (OTCPK:GNVR)
+1795091,biotech,Drugs (Biotechnology),NYSEAM:OSTX,OS Therapies Incorporated (NYSEAM:OSTX)
+1796129,biotech,Drugs (Biotechnology),OTCPK:VINC,"Vincerx Pharma, Inc. (OTCPK:VINC)"
+1796280,biotech,Drugs (Biotechnology),NasdaqGS:ORIC,"ORIC Pharmaceuticals, Inc. (NasdaqGS:ORIC)"
+1797336,biotech,Drugs (Biotechnology),OTCPK:ADXS,"Ayala Pharmaceuticals, Inc. (OTCPK:ADXS)"
+1798749,biotech,Drugs (Biotechnology),NasdaqCM:JBIO,"Jade Biosciences, Inc. (NasdaqCM:JBIO)"
+1799448,biotech,Drugs (Biotechnology),NasdaqCM:ALGS,"Aligos Therapeutics, Inc. (NasdaqCM:ALGS)"
+1799788,biotech,Drugs (Biotechnology),NasdaqCM:GLSI,"Greenwich LifeSciences, Inc. (NasdaqCM:GLSI)"
+1806310,biotech,Drugs (Biotechnology),NasdaqGS:TSHA,"Taysha Gene Therapies, Inc. (NasdaqGS:TSHA)"
+1806952,biotech,Drugs (Biotechnology),NasdaqGS:LYEL,"Lyell Immunopharma, Inc. (NasdaqGS:LYEL)"
+1807120,biotech,Drugs (Biotechnology),NasdaqGS:DSGN,"Design Therapeutics, Inc. (NasdaqGS:DSGN)"
+1808898,biotech,Drugs (Biotechnology),NasdaqCM:BNTC,Benitec Biopharma Inc. (NasdaqCM:BNTC)
+1810182,biotech,Drugs (Biotechnology),NasdaqGS:ALXO,ALX Oncology Holdings Inc. (NasdaqGS:ALXO)
+1810560,biotech,Drugs (Biotechnology),NasdaqCM:REVB,"Revelation Biosciences, Inc. (NasdaqCM:REVB)"
+1812364,biotech,Drugs (Biotechnology),NasdaqGM:RLAY,"Relay Therapeutics, Inc. (NasdaqGM:RLAY)"
+1815442,biotech,Drugs (Biotechnology),NasdaqGM:KYMR,"Kymera Therapeutics, Inc. (NasdaqGM:KYMR)"
+1816736,biotech,Drugs (Biotechnology),NasdaqGM:IRON,"Disc Medicine, Inc. (NasdaqGM:IRON)"
+1817229,biotech,Drugs (Biotechnology),NasdaqGS:VOR,Vor Biopharma Inc. (NasdaqGS:VOR)
+1817241,biotech,Drugs (Biotechnology),NasdaqGM:ARTV,"Artiva Biotherapeutics, Inc. (NasdaqGM:ARTV)"
+1817713,biotech,Drugs (Biotechnology),NasdaqGM:JANX,"Janux Therapeutics, Inc. (NasdaqGM:JANX)"
+1818382,biotech,Drugs (Biotechnology),NasdaqGS:HUMA,"Humacyte, Inc. (NasdaqGS:HUMA)"
+1818794,biotech,Drugs (Biotechnology),NasdaqGS:DYN,"Dyne Therapeutics, Inc. (NasdaqGS:DYN)"
+1818844,biotech,Drugs (Biotechnology),NasdaqCM:DWTX,"Dogwood Therapeutics, Inc. (NasdaqCM:DWTX)"
+1819133,biotech,Drugs (Biotechnology),NasdaqGM:TNGX,"Tango Therapeutics, Inc. (NasdaqGM:TNGX)"
+1819411,biotech,Drugs (Biotechnology),NasdaqGM:GANX,"Gain Therapeutics, Inc. (NasdaqGM:GANX)"
+1822462,biotech,Drugs (Biotechnology),NasdaqGM:FHTX,Foghorn Therapeutics Inc. (NasdaqGM:FHTX)
+1822791,biotech,Drugs (Biotechnology),NasdaqCM:CLNN,Clene Inc. (NasdaqCM:CLNN)
+1824293,biotech,Drugs (Biotechnology),NasdaqCM:GRI,"GRI Bio, Inc. (NasdaqCM:GRI)"
+1824893,biotech,Drugs (Biotechnology),NasdaqCM:SRZN,"Surrozen, Inc. (NasdaqCM:SRZN)"
+1826457,biotech,Drugs (Biotechnology),NasdaqGS:GLUE,"Monte Rosa Therapeutics, Inc. (NasdaqGS:GLUE)"
+1826667,biotech,Drugs (Biotechnology),NasdaqGM:TLSI,"TriSalus Life Sciences, Inc. (NasdaqGM:TLSI)"
+1826892,biotech,Drugs (Biotechnology),NasdaqCM:BCAB,"BioAtla, Inc. (NasdaqCM:BCAB)"
+1828673,biotech,Drugs (Biotechnology),NasdaqCM:HCWB,HCW Biologics Inc. (NasdaqCM:HCWB)
+1829635,biotech,Drugs (Biotechnology),NasdaqCM:RNAZ,"TransCode Therapeutics, Inc. (NasdaqCM:RNAZ)"
+1829802,biotech,Drugs (Biotechnology),NasdaqCM:SNSE,"Sensei Biotherapeutics, Inc. (NasdaqCM:SNSE)"
+1831828,biotech,Drugs (Biotechnology),NasdaqGM:VERA,"Vera Therapeutics, Inc. (NasdaqGM:VERA)"
+1832038,biotech,Drugs (Biotechnology),NasdaqGM:IVVD,"Invivyd, Inc. (NasdaqGM:IVVD)"
+1833214,biotech,Drugs (Biotechnology),NasdaqCM:SABS,"SAB Biotherapeutics, Inc. (NasdaqCM:SABS)"
+1835022,biotech,Drugs (Biotechnology),NasdaqCM:COYA,"Coya Therapeutics, Inc. (NasdaqCM:COYA)"
+1835597,biotech,Drugs (Biotechnology),NasdaqGS:PEPG,PepGen Inc. (NasdaqGS:PEPG)
+1837607,biotech,Drugs (Biotechnology),NYSEAM:AEON,"AEON Biopharma, Inc. (NYSEAM:AEON)"
+1840229,biotech,Drugs (Biotechnology),NasdaqCM:INKT,"MiNK Therapeutics, Inc. (NasdaqCM:INKT)"
+1840233,biotech,Drugs (Biotechnology),NasdaqCM:XLO,"Xilio Therapeutics, Inc. (NasdaqCM:XLO)"
+1840425,biotech,Drugs (Biotechnology),NasdaqCM:OSRH,"OSR Holdings, Inc. (NasdaqCM:OSRH)"
+1840439,biotech,Drugs (Biotechnology),NasdaqGS:BMEA,"Biomea Fusion, Inc. (NasdaqGS:BMEA)"
+1841330,biotech,Drugs (Biotechnology),NasdaqCM:KTTA,Pasithea Therapeutics Corp. (NasdaqCM:KTTA)
+1841387,biotech,Drugs (Biotechnology),NasdaqGM:CADL,"Candel Therapeutics, Inc. (NasdaqGM:CADL)"
+1842939,biotech,Drugs (Biotechnology),OTCPK:XAGE,"Longevity Health Holdings, Inc. (OTCPK:XAGE)"
+1844417,biotech,Drugs (Biotechnology),NasdaqCM:ESLA,"Estrella Immunopharma, Inc. (NasdaqCM:ESLA)"
+1845337,biotech,Drugs (Biotechnology),NasdaqGS:DAWN,"Day One Biopharmaceuticals, Inc. (NasdaqGS:DAWN)"
+1845459,biotech,Drugs (Biotechnology),OTCPK:NKGN,"NKGen Biotech, Inc. (OTCPK:NKGN)"
+1850119,biotech,Drugs (Biotechnology),NasdaqCM:IPSC,"Century Therapeutics, Inc. (NasdaqCM:IPSC)"
+1850270,biotech,Drugs (Biotechnology),NasdaqCM:PROK,ProKidney Corp. (NasdaqCM:PROK)
+1850767,biotech,Drugs (Biotechnology),OTCPK:ACUT,"AccuStem Sciences, Inc. (OTCPK:ACUT)"
+1851484,biotech,Drugs (Biotechnology),NasdaqCM:CTOR,"Citius Oncology, Inc. (NasdaqCM:CTOR)"
+1851657,biotech,Drugs (Biotechnology),OTCPK:VAXX,"Vaxxinity, Inc. (OTCPK:VAXX)"
+1853816,biotech,Drugs (Biotechnology),NasdaqCM:DRMA,"Dermata Therapeutics, Inc. (NasdaqCM:DRMA)"
+1854270,biotech,Drugs (Biotechnology),NasdaqCM:SNTI,"Senti Biosciences, Inc. (NasdaqCM:SNTI)"
+1855485,biotech,Drugs (Biotechnology),NYSEAM:CLDI,"Calidi Biotherapeutics, Inc. (NYSEAM:CLDI)"
+1855644,biotech,Drugs (Biotechnology),NasdaqCM:ZURA,Zura Bio Limited (NasdaqCM:ZURA)
+1857044,biotech,Drugs (Biotechnology),NasdaqCM:INDP,"Indaptus Therapeutics, Inc. (NasdaqCM:INDP)"
+1858848,biotech,Drugs (Biotechnology),NasdaqGS:TNYA,"Tenaya Therapeutics, Inc. (NasdaqGS:TNYA)"
+1859007,biotech,Drugs (Biotechnology),OTCPK:ZVSA,"ZyVersa Therapeutics, Inc. (OTCPK:ZVSA)"
+1860657,biotech,Drugs (Biotechnology),NasdaqCM:ALLR,"Allarity Therapeutics, Inc. (NasdaqCM:ALLR)"
+1860871,biotech,Drugs (Biotechnology),NasdaqGM:TVGN,Tevogen Bio Holdings Inc. (NasdaqGM:TVGN)
+1861560,biotech,Drugs (Biotechnology),NasdaqGS:NUVL,"Nuvalent, Inc. (NasdaqGS:NUVL)"
+1861657,biotech,Drugs (Biotechnology),NasdaqCM:THAR,"Tharimmune, Inc. (NasdaqCM:THAR)"
+1863127,biotech,Drugs (Biotechnology),NasdaqGS:TYRA,"Tyra Biosciences, Inc. (NasdaqGS:TYRA)"
+1868279,biotech,Drugs (Biotechnology),NasdaqGM:AVBP,"ArriVent BioPharma, Inc. (NasdaqGM:AVBP)"
+1869105,biotech,Drugs (Biotechnology),NasdaqGM:BBOT,"BridgeBio Oncology Therapeutics, Inc. (NasdaqGM:BBOT)"
+1869974,biotech,Drugs (Biotechnology),OTCPK:OCEA,"Ocean Biomedical, Inc. (OTCPK:OCEA)"
+1870144,biotech,Drugs (Biotechnology),NasdaqCM:CDIO,"Cardio Diagnostics Holdings, Inc. (NasdaqCM:CDIO)"
+1870404,biotech,Drugs (Biotechnology),OTCPK:CERO,"CERo Therapeutics Holdings, Inc. (OTCPK:CERO)"
+1873835,biotech,Drugs (Biotechnology),NasdaqCM:IMMX,"Immix Biopharma, Inc. (NasdaqCM:IMMX)"
+1875558,biotech,Drugs (Biotechnology),NasdaqCM:NVCT,"Nuvectis Pharma, Inc. (NasdaqCM:NVCT)"
+1878313,biotech,Drugs (Biotechnology),NYSEAM:MAIA,"MAIA Biotechnology, Inc. (NYSEAM:MAIA)"
+1893219,biotech,Drugs (Biotechnology),NasdaqCM:ABP,"Abpro Holdings, Inc. (NasdaqCM:ABP)"
+1894562,biotech,Drugs (Biotechnology),NasdaqGM:PRME,"Prime Medicine, Inc. (NasdaqGM:PRME)"
+1907108,biotech,Drugs (Biotechnology),NasdaqGM:LXEO,"Lexeo Therapeutics, Inc. (NasdaqGM:LXEO)"
+1907223,biotech,Drugs (Biotechnology),NasdaqCM:KLTO,"Klotho Neurosciences, Inc. (NasdaqCM:KLTO)"
+1919246,biotech,Drugs (Biotechnology),NYSEAM:PTHS,Pelthos Therapeutics Inc. (NYSEAM:PTHS)
+1933414,biotech,Drugs (Biotechnology),NasdaqGS:MLYS,"Mineralys Therapeutics, Inc. (NasdaqGS:MLYS)"
+1935979,biotech,Drugs (Biotechnology),NYSE:BHVN,Biohaven Ltd. (NYSE:BHVN)
+1937653,biotech,Drugs (Biotechnology),NasdaqGS:ZYME,Zymeworks Inc. (NasdaqGS:ZYME)
+1944885,biotech,Drugs (Biotechnology),NasdaqCM:APLM,"Apollomics, Inc. (NasdaqCM:APLM)"
+1953926,biotech,Drugs (Biotechnology),NasdaqGS:ZBIO,"Zenas BioPharma, Inc. (NasdaqGS:ZBIO)"
+1958777,biotech,Drugs (Biotechnology),NasdaqCM:FBLG,"FibroBiologics, Inc. (NasdaqCM:FBLG)"
+1960262,biotech,Drugs (Biotechnology),OTCPK:LUDG,"Ludwig Enterprises, Inc. (OTCPK:LUDG)"
+1962011,biotech,Drugs (Biotechnology),NYSEAM:KAPA,"Kairos Pharma, Ltd. (NYSEAM:KAPA)"
+1971387,biotech,Drugs (Biotechnology),NasdaqGM:LIMN,"Liminatus Pharma, Inc. (NasdaqGM:LIMN)"
+1974640,biotech,Drugs (Biotechnology),NasdaqGM:APGE,"Apogee Therapeutics, Inc. (NasdaqGM:APGE)"
+1991792,biotech,Drugs (Biotechnology),NasdaqGS:CGON,"CG Oncology, Inc. (NasdaqGS:CGON)"
+1994702,biotech,Drugs (Biotechnology),NasdaqGS:KYTX,"Kyverna Therapeutics, Inc. (NasdaqGS:KYTX)"
+1997296,biotech,Drugs (Biotechnology),NasdaqCM:MDCX,Medicus Pharma Ltd. (NasdaqCM:MDCX)
+2007919,biotech,Drugs (Biotechnology),NasdaqGS:INBX,"Inhibrx Biosciences, Inc. (NasdaqGS:INBX)"
+2010788,biotech,Drugs (Biotechnology),NasdaqCM:EXOZ,"eXoZymes, Inc. (NasdaqCM:EXOZ)"
+2019410,biotech,Drugs (Biotechnology),NasdaqGS:CAI,"Caris Life Sciences, Inc. (NasdaqGS:CAI)"
+2022626,biotech,Drugs (Biotechnology),NasdaqGS:UPB,"Upstream Bio, Inc. (NasdaqGS:UPB)"
+2023658,biotech,Drugs (Biotechnology),NasdaqGM:BCAX,Bicara Therapeutics Inc. (NasdaqGM:BCAX)
+2036042,biotech,Drugs (Biotechnology),NasdaqGM:SION,"Sionna Therapeutics, Inc. (NasdaqGM:SION)"
+2044725,biotech,Drugs (Biotechnology),NYSE:EVMN,"Evommune, Inc. (NYSE:EVMN)"
+2078856,biotech,Drugs (Biotechnology),NasdaqCM:PURR,Hyperliquid Strategies Inc. (NasdaqCM:PURR)
+2093101,biotech,Drugs (Biotechnology),NasdaqGM:RNA,"Avidity Biosciences, Inc. (NasdaqGM:RNA)"
+14272,pharma,Drugs (Pharmaceutical),NYSE:BMY,Bristol-Myers Squibb Company (NYSE:BMY)
+21665,pharma,Drugs (Pharmaceutical),CNSX:CL,Cresco Labs Inc. (CNSX:CL)
+25743,pharma,Drugs (Pharmaceutical),NasdaqGS:TXMD,"TherapeuticsMD, Inc. (NasdaqGS:TXMD)"
+59478,pharma,Drugs (Pharmaceutical),NYSE:LLY,Eli Lilly and Company (NYSE:LLY)
+78003,pharma,Drugs (Pharmaceutical),NYSE:PFE,Pfizer Inc. (NYSE:PFE)
+200406,pharma,Drugs (Pharmaceutical),NYSE:JNJ,Johnson & Johnson (NYSE:JNJ)
+310158,pharma,Drugs (Pharmaceutical),NYSE:MRK,"Merck & Co., Inc. (NYSE:MRK)"
+315545,pharma,Drugs (Pharmaceutical),OTCPK:PVCT,"Provectus Biopharmaceuticals, Inc. (OTCPK:PVCT)"
+786947,pharma,Drugs (Pharmaceutical),OTCPK:ACUR,"Acura Pharmaceuticals, Inc. (OTCPK:ACUR)"
+822370,pharma,Drugs (Pharmaceutical),OTCPK:EMMA,"Emmaus Life Sciences, Inc. (OTCPK:EMMA)"
+847015,pharma,Drugs (Pharmaceutical),OTCPK:MDCN,"Medican Enterprises, Inc. (OTCPK:MDCN)"
+863894,pharma,Drugs (Pharmaceutical),NasdaqCM:VERU,Veru Inc. (NasdaqCM:VERU)
+868278,pharma,Drugs (Pharmaceutical),NasdaqCM:PRPH,"ProPhase Labs, Inc. (NasdaqCM:PRPH)"
+886163,pharma,Drugs (Pharmaceutical),NasdaqGM:LGND,Ligand Pharmaceuticals Incorporated (NasdaqGM:LGND)
+890821,pharma,Drugs (Pharmaceutical),NasdaqCM:ENVB,"Enveric Biosciences, Inc. (NasdaqCM:ENVB)"
+897078,pharma,Drugs (Pharmaceutical),OTCPK:KOAN,"Resonate Blends, Inc. (OTCPK:KOAN)"
+906709,pharma,Drugs (Pharmaceutical),NasdaqCM:NKTR,Nektar Therapeutics (NasdaqCM:NKTR)
+1010086,pharma,Drugs (Pharmaceutical),NasdaqGM:SIGA,"SIGA Technologies, Inc. (NasdaqGM:SIGA)"
+1023024,pharma,Drugs (Pharmaceutical),NasdaqGM:ANIP,"ANI Pharmaceuticals, Inc. (NasdaqGM:ANIP)"
+1035422,pharma,Drugs (Pharmaceutical),OTCPK:CTTH,"CTT Pharmaceutical Holdings, Inc. (OTCPK:CTTH)"
+1053369,pharma,Drugs (Pharmaceutical),OTCPK:ELTP,"Elite Pharmaceuticals, Inc. (OTCPK:ELTP)"
+1062822,pharma,Drugs (Pharmaceutical),NasdaqCM:LXRX,"Lexicon Pharmaceuticals, Inc. (NasdaqCM:LXRX)"
+1069530,pharma,Drugs (Pharmaceutical),NasdaqCM:SAVA,"Cassava Sciences, Inc. (NasdaqCM:SAVA)"
+1069899,pharma,Drugs (Pharmaceutical),NasdaqGM:PAHC,Phibro Animal Health Corporation (NasdaqGM:PAHC)
+1080014,pharma,Drugs (Pharmaceutical),NasdaqGS:INVA,"Innoviva, Inc. (NasdaqGS:INVA)"
+1087294,pharma,Drugs (Pharmaceutical),NasdaqGS:CPIX,Cumberland Pharmaceuticals Inc. (NasdaqGS:CPIX)
+1088856,pharma,Drugs (Pharmaceutical),NasdaqCM:CORT,Corcept Therapeutics Incorporated (NasdaqCM:CORT)
+1109486,pharma,Drugs (Pharmaceutical),OTCPK:EDXC,Endexx Corporation (OTCPK:EDXC)
+1130598,pharma,Drugs (Pharmaceutical),NasdaqCM:TRAW,"Traws Pharma, Inc. (NasdaqCM:TRAW)"
+1137005,pharma,Drugs (Pharmaceutical),OTCPK:CBDX,"Curative Biosciences, Inc. (OTCPK:CBDX)"
+1145604,pharma,Drugs (Pharmaceutical),OTCPK:NIKA,"Nika Pharmaceuticals, Inc. (OTCPK:NIKA)"
+1165320,pharma,Drugs (Pharmaceutical),OTCPK:GBLX,"GB Sciences, Inc. (OTCPK:GBLX)"
+1176309,pharma,Drugs (Pharmaceutical),NasdaqCM:ORMP,Oramed Pharmaceuticals Inc. (NasdaqCM:ORMP)
+1178253,pharma,Drugs (Pharmaceutical),NasdaqCM:SCYX,"SCYNEXIS, Inc. (NasdaqCM:SCYX)"
+1205181,pharma,Drugs (Pharmaceutical),OTCPK:GPFT,"Grapefruit USA, Inc. (OTCPK:GPFT)"
+1213106,pharma,Drugs (Pharmaceutical),OTCPK:JTBK,Jetblack Corp. (OTCPK:JTBK)
+1261734,pharma,Drugs (Pharmaceutical),OTCPK:AOLS,"Aeolus Pharmaceuticals, Inc. (OTCPK:AOLS)"
+1267565,pharma,Drugs (Pharmaceutical),NasdaqGS:COLL,"Collegium Pharmaceutical, Inc. (NasdaqGS:COLL)"
+1285819,pharma,Drugs (Pharmaceutical),NasdaqGM:OMER,Omeros Corporation (NasdaqGM:OMER)
+1290504,pharma,Drugs (Pharmaceutical),OTCPK:NUGS,Cannabis Strategic Ventures (OTCPK:NUGS)
+1292087,pharma,Drugs (Pharmaceutical),OTCPK:LTUS,"Lotus Pharmaceuticals, Inc. (OTCPK:LTUS)"
+1295947,pharma,Drugs (Pharmaceutical),NYSE:PBH,Prestige Consumer Healthcare Inc. (NYSE:PBH)
+1297184,pharma,Drugs (Pharmaceutical),NasdaqGS:AMPH,"Amphastar Pharmaceuticals, Inc. (NasdaqGS:AMPH)"
+1314102,pharma,Drugs (Pharmaceutical),NasdaqGM:EYPT,"EyePoint, Inc. (NasdaqGM:EYPT)"
+1321834,pharma,Drugs (Pharmaceutical),NasdaqCM:QCLS,"Q/C Technologies, Inc. (NasdaqCM:QCLS)"
+1324736,pharma,Drugs (Pharmaceutical),OTCPK:HENC,Hero Technologies Inc. (OTCPK:HENC)
+1326205,pharma,Drugs (Pharmaceutical),NYSEAM:IGC,"IGC Pharma, Inc. (NYSEAM:IGC)"
+1327273,pharma,Drugs (Pharmaceutical),NasdaqCM:LYRA,"Lyra Therapeutics, Inc. (NasdaqCM:LYRA)"
+1343009,pharma,Drugs (Pharmaceutical),OTCPK:CNBX,CNBX Pharmaceuticals Inc. (OTCPK:CNBX)
+1346830,pharma,Drugs (Pharmaceutical),NasdaqCM:TVRD,"Tvardi Therapeutics, Inc. (NasdaqCM:TVRD)"
+1351573,pharma,Drugs (Pharmaceutical),OTCPK:PHCG,"Pure Harvest Corporate Group, Inc. (OTCPK:PHCG)"
+1354591,pharma,Drugs (Pharmaceutical),OTCPK:PTLF,"Petlife Pharmaceuticals, Inc. (OTCPK:PTLF)"
+1356576,pharma,Drugs (Pharmaceutical),NasdaqGM:SUPN,"Supernus Pharmaceuticals, Inc. (NasdaqGM:SUPN)"
+1360214,pharma,Drugs (Pharmaceutical),NasdaqGM:HROW,"Harrow, Inc. (NasdaqGM:HROW)"
+1367083,pharma,Drugs (Pharmaceutical),NasdaqCM:SNOA,"Sonoma Pharmaceuticals, Inc. (NasdaqCM:SNOA)"
+1372514,pharma,Drugs (Pharmaceutical),NasdaqCM:KPRX,"Kiora Pharmaceuticals, Inc. (NasdaqCM:KPRX)"
+1385818,pharma,Drugs (Pharmaceutical),NasdaqCM:AYTU,"Aytu BioPharma, Inc. (NasdaqCM:AYTU)"
+1389545,pharma,Drugs (Pharmaceutical),NYSEAM:NBY,"NovaBay Pharmaceuticals, Inc. (NYSEAM:NBY)"
+1393434,pharma,Drugs (Pharmaceutical),NasdaqGM:OCUL,"Ocular Therapeutix, Inc. (NasdaqGM:OCUL)"
+1393772,pharma,Drugs (Pharmaceutical),OTCPK:BUDZ,"WEED, Inc. (OTCPK:BUDZ)"
+1396814,pharma,Drugs (Pharmaceutical),NasdaqGS:PCRX,"Pacira BioSciences, Inc. (NasdaqGS:PCRX)"
+1398733,pharma,Drugs (Pharmaceutical),NasdaqGM:AQST,"Aquestive Therapeutics, Inc. (NasdaqGM:AQST)"
+1401914,pharma,Drugs (Pharmaceutical),NasdaqCM:DARE,"Daré Bioscience, Inc. (NasdaqCM:DARE)"
+1409197,pharma,Drugs (Pharmaceutical),OTCPK:BSPK,"Bespoke Extracts, Inc. (OTCPK:BSPK)"
+1410098,pharma,Drugs (Pharmaceutical),NasdaqGM:CRMD,CorMedix Inc. (NasdaqGM:CRMD)
+1410187,pharma,Drugs (Pharmaceutical),OTCPK:CNNC,Cannonau Corp. (OTCPK:CNNC)
+1412486,pharma,Drugs (Pharmaceutical),NasdaqCM:COCP,"Cocrystal Pharma, Inc. (NasdaqCM:COCP)"
+1413488,pharma,Drugs (Pharmaceutical),OTCPK:CBGL,"Cannabis Global, Inc. (OTCPK:CBGL)"
+1424455,pharma,Drugs (Pharmaceutical),OTCPK:RMRK,Rimrock Gold Corp. (OTCPK:RMRK)
+1427570,pharma,Drugs (Pharmaceutical),NasdaqCM:HIND,"Vyome Holdings, Inc. (NasdaqCM:HIND)"
+1427925,pharma,Drugs (Pharmaceutical),NasdaqCM:TLPH,"Talphera, Inc. (NasdaqCM:TLPH)"
+1434647,pharma,Drugs (Pharmaceutical),NasdaqGS:ZVRA,"Zevra Therapeutics, Inc. (NasdaqGS:ZVRA)"
+1434868,pharma,Drugs (Pharmaceutical),NasdaqGM:ESPR,"Esperion Therapeutics, Inc. (NasdaqGM:ESPR)"
+1435717,pharma,Drugs (Pharmaceutical),OTCPK:VDRM,"ViaDerma, Inc. (OTCPK:VDRM)"
+1444192,pharma,Drugs (Pharmaceutical),NasdaqCM:GRCE,"Grace Therapeutics, Inc. (NasdaqCM:GRCE)"
+1455365,pharma,Drugs (Pharmaceutical),NasdaqCM:CGTX,"Cognition Therapeutics, Inc. (NasdaqCM:CGTX)"
+1460329,pharma,Drugs (Pharmaceutical),CNSX:FNT.U,FLUENT Corp. (CNSX:FNT.U)
+1463000,pharma,Drugs (Pharmaceutical),CNSX:GRIN,Grown Rogue International Inc. (CNSX:GRIN)
+1493526,pharma,Drugs (Pharmaceutical),OTCPK:PRTT,Protect Pharmaceutical Corporation (OTCPK:PRTT)
+1506251,pharma,Drugs (Pharmaceutical),NasdaqCM:CTXR,"Citius Pharmaceuticals, Inc. (NasdaqCM:CTXR)"
+1509957,pharma,Drugs (Pharmaceutical),OTCPK:NASC,"Nascent Pharma Holdings, Inc. (OTCPK:NASC)"
+1512886,pharma,Drugs (Pharmaceutical),OTCPK:NTRR,Neutra Corp. (OTCPK:NTRR)
+1513525,pharma,Drugs (Pharmaceutical),NasdaqCM:ADIL,"Adial Pharmaceuticals, Inc. (NasdaqCM:ADIL)"
+1522767,pharma,Drugs (Pharmaceutical),OTCPK:MRMD,MariMed Inc. (OTCPK:MRMD)
+1530746,pharma,Drugs (Pharmaceutical),OTCPK:KAYS,"Kaya Holdings, Inc. (OTCPK:KAYS)"
+1533743,pharma,Drugs (Pharmaceutical),NasdaqCM:PCSA,"Processa Pharmaceuticals, Inc. (NasdaqCM:PCSA)"
+1534133,pharma,Drugs (Pharmaceutical),NasdaqCM:CALC,"CalciMedica, Inc. (NasdaqCM:CALC)"
+1535955,pharma,Drugs (Pharmaceutical),NasdaqCM:LPCN,Lipocine Inc. (NasdaqCM:LPCN)
+1538495,pharma,Drugs (Pharmaceutical),OTCPK:ETST,"Earth Science Tech, Inc. (OTCPK:ETST)"
+1539029,pharma,Drugs (Pharmaceutical),OTCPK:CLSD.Q,"Clearside Biomedical, Inc. (OTCPK:CLSD.Q)"
+1552189,pharma,Drugs (Pharmaceutical),OTCPK:PLSH,"Panacea Life Sciences Holdings, Inc. (OTCPK:PLSH)"
+1553643,pharma,Drugs (Pharmaceutical),NasdaqCM:RLMD,"Relmada Therapeutics, Inc. (NasdaqCM:RLMD)"
+1555280,pharma,Drugs (Pharmaceutical),NYSE:ZTS,Zoetis Inc. (NYSE:ZTS)
+1557746,pharma,Drugs (Pharmaceutical),NasdaqGS:ACRS,"Aclaris Therapeutics, Inc. (NasdaqGS:ACRS)"
+1563880,pharma,Drugs (Pharmaceutical),NasdaqGM:TRVI,"Trevi Therapeutics, Inc. (NasdaqGM:TRVI)"
+1566044,pharma,Drugs (Pharmaceutical),NasdaqCM:VYNE,VYNE Therapeutics Inc. (NasdaqCM:VYNE)
+1567503,pharma,Drugs (Pharmaceutical),OTCPK:TKCI,"TurnKey Capital, Inc. (OTCPK:TKCI)"
+1570562,pharma,Drugs (Pharmaceutical),NasdaqGM:EOLS,"Evolus, Inc. (NasdaqGM:EOLS)"
+1574235,pharma,Drugs (Pharmaceutical),NasdaqCM:PULM,"Pulmatrix, Inc. (NasdaqCM:PULM)"
+1574676,pharma,Drugs (Pharmaceutical),OTCPK:NGHI,New Green Hemp Inc. (OTCPK:NGHI)
+1579428,pharma,Drugs (Pharmaceutical),NasdaqGM:AXSM,"Axsome Therapeutics, Inc. (NasdaqGM:AXSM)"
+1583107,pharma,Drugs (Pharmaceutical),NasdaqGM:TBPH,"Theravance Biopharma, Inc. (NasdaqGM:TBPH)"
+1583771,pharma,Drugs (Pharmaceutical),OTCPK:HEPA,"Hepion Pharmaceuticals, Inc. (OTCPK:HEPA)"
+1585608,pharma,Drugs (Pharmaceutical),NasdaqCM:JAGX,"Jaguar Health, Inc. (NasdaqCM:JAGX)"
+1593899,pharma,Drugs (Pharmaceutical),NasdaqGS:AVIR,"Atea Pharmaceuticals, Inc. (NasdaqGS:AVIR)"
+1618835,pharma,Drugs (Pharmaceutical),OTCPK:EVFM,"Evofem Biosciences, Inc. (OTCPK:EVFM)"
+1620463,pharma,Drugs (Pharmaceutical),NasdaqCM:ATHA,"Athira Pharma, Inc. (NasdaqCM:ATHA)"
+1621221,pharma,Drugs (Pharmaceutical),NasdaqCM:ARTL,"Artelo Biosciences, Inc. (NasdaqCM:ARTL)"
+1622244,pharma,Drugs (Pharmaceutical),OTCPK:OWPC,"One World Products, Inc. (OTCPK:OWPC)"
+1625297,pharma,Drugs (Pharmaceutical),NasdaqGS:INDV,Indivior PLC (NasdaqGS:INDV)
+1636509,pharma,Drugs (Pharmaceutical),OTCPK:VCBD,"Vitalibis, Inc. (OTCPK:VCBD)"
+1643301,pharma,Drugs (Pharmaceutical),OTCPK:AVRW,"Avenir Wellness Solutions, Inc. (OTCPK:AVRW)"
+1644903,pharma,Drugs (Pharmaceutical),NYSEAM:YCBD,"cbdMD, Inc. (NYSEAM:YCBD)"
+1644963,pharma,Drugs (Pharmaceutical),OTCPK:ATXI,"Avenue Therapeutics, Inc. (OTCPK:ATXI)"
+1655759,pharma,Drugs (Pharmaceutical),NasdaqGS:ARVN,"Arvinas, Inc. (NasdaqGS:ARVN)"
+1658247,pharma,Drugs (Pharmaceutical),NasdaqGS:CRNX,"Crinetics Pharmaceuticals, Inc. (NasdaqGS:CRNX)"
+1658551,pharma,Drugs (Pharmaceutical),NasdaqGS:AMLX,"Amylyx Pharmaceuticals, Inc. (NasdaqGS:AMLX)"
+1658678,pharma,Drugs (Pharmaceutical),OTCPK:BSEM,"BioStem Technologies, Inc. (OTCPK:BSEM)"
+1660334,pharma,Drugs (Pharmaceutical),NasdaqCM:VRCA,Verrica Pharmaceuticals Inc. (NasdaqCM:VRCA)
+1669400,pharma,Drugs (Pharmaceutical),OTCPK:VFRM,"Veritas Farms, Inc. (OTCPK:VFRM)"
+1672619,pharma,Drugs (Pharmaceutical),NasdaqGS:ELVN,"Enliven Therapeutics, Inc. (NasdaqGS:ELVN)"
+1676047,pharma,Drugs (Pharmaceutical),NasdaqCM:NTRB,Nutriband Inc. (NasdaqCM:NTRB)
+1679628,pharma,Drugs (Pharmaceutical),NasdaqCM:JUNS,"Jupiter Neurosciences, Inc. (NasdaqCM:JUNS)"
+1680378,pharma,Drugs (Pharmaceutical),NasdaqCM:SNES,"SenesTech, Inc. (NasdaqCM:SNES)"
+1680581,pharma,Drugs (Pharmaceutical),NasdaqGM:FULC,"Fulcrum Therapeutics, Inc. (NasdaqGM:FULC)"
+1682639,pharma,Drugs (Pharmaceutical),NasdaqCM:HYPD,"Hyperion DeFi, Inc. (NasdaqCM:HYPD)"
+1689066,pharma,Drugs (Pharmaceutical),OTCPK:SIGO,"Sunset Island Group, Inc. (OTCPK:SIGO)"
+1691082,pharma,Drugs (Pharmaceutical),NasdaqGM:LBRX,LB Pharmaceuticals Inc (NasdaqGM:LBRX)
+1695473,pharma,Drugs (Pharmaceutical),OTCPK:GCAN,"The Greater Cannabis Company, Inc. (OTCPK:GCAN)"
+1708331,pharma,Drugs (Pharmaceutical),OTCPK:VRPX,"Virpax Pharmaceuticals, Inc. (OTCPK:VRPX)"
+1709941,pharma,Drugs (Pharmaceutical),NasdaqGS:BIOA,"BioAge Labs, Inc. (NasdaqGS:BIOA)"
+1710072,pharma,Drugs (Pharmaceutical),NasdaqGS:EWTX,"Edgewise Therapeutics, Inc. (NasdaqGS:EWTX)"
+1710340,pharma,Drugs (Pharmaceutical),NasdaqGM:ETON,"Eton Pharmaceuticals, Inc. (NasdaqGM:ETON)"
+1711786,pharma,Drugs (Pharmaceutical),NasdaqCM:HOTH,"Hoth Therapeutics, Inc. (NasdaqCM:HOTH)"
+1713863,pharma,Drugs (Pharmaceutical),NYSE:RFL,"Rafael Holdings, Inc. (NYSE:RFL)"
+1719406,pharma,Drugs (Pharmaceutical),NasdaqCM:NRXP,"NRx Pharmaceuticals, Inc. (NasdaqCM:NRXP)"
+1723059,pharma,Drugs (Pharmaceutical),OTCPK:BIOE,Bio Essence Corporation (OTCPK:BIOE)
+1723128,pharma,Drugs (Pharmaceutical),NasdaqGS:AMRX,"Amneal Pharmaceuticals, Inc. (NasdaqGS:AMRX)"
+1729427,pharma,Drugs (Pharmaceutical),NasdaqCM:CNSP,"CNS Pharmaceuticals, Inc. (NasdaqCM:CNSP)"
+1739104,pharma,Drugs (Pharmaceutical),NYSE:ELAN,Elanco Animal Health Incorporated (NYSE:ELAN)
+1742927,pharma,Drugs (Pharmaceutical),NasdaqCM:RVPH,"Reviva Pharmaceuticals Holdings, Inc. (NasdaqCM:RVPH)"
+1746473,pharma,Drugs (Pharmaceutical),NasdaqGS:PLRX,"Pliant Therapeutics, Inc. (NasdaqGS:PLRX)"
+1754195,pharma,Drugs (Pharmaceutical),CNSX:TRUL,Trulieve Cannabis Corp. (CNSX:TRUL)
+1771706,pharma,Drugs (Pharmaceutical),CNSX:VREO,Vireo Growth Inc. (CNSX:VREO)
+1774857,pharma,Drugs (Pharmaceutical),NasdaqGS:AARD,"Aardvark Therapeutics, Inc. (NasdaqGS:AARD)"
+1776111,pharma,Drugs (Pharmaceutical),NasdaqGS:MBX,"MBX Biosciences, Inc. (NasdaqGS:MBX)"
+1778129,pharma,Drugs (Pharmaceutical),TSX:TSND,TerrAscend Corp. (TSX:TSND)
+1783183,pharma,Drugs (Pharmaceutical),NasdaqGS:PHAT,"Phathom Pharmaceuticals, Inc. (NasdaqGS:PHAT)"
+1792044,pharma,Drugs (Pharmaceutical),NasdaqGS:VTRS,Viatris Inc. (NasdaqGS:VTRS)
+1795139,pharma,Drugs (Pharmaceutical),CNSX:GTII,Green Thumb Industries Inc. (CNSX:GTII)
+1802665,pharma,Drugs (Pharmaceutical),NasdaqGM:HRMY,"Harmony Biosciences Holdings, Inc. (NasdaqGM:HRMY)"
+1802768,pharma,Drugs (Pharmaceutical),NasdaqGS:RPRX,Royalty Pharma plc (NasdaqGS:RPRX)
+1808665,pharma,Drugs (Pharmaceutical),NasdaqCM:ASRT,"Assertio Holdings, Inc. (NasdaqCM:ASRT)"
+1811063,pharma,Drugs (Pharmaceutical),NYSE:NUVB,Nuvation Bio Inc. (NYSE:NUVB)
+1811623,pharma,Drugs (Pharmaceutical),OTCPK:PXMD,"PaxMedica, Inc. (OTCPK:PXMD)"
+1813452,pharma,Drugs (Pharmaceutical),CNSX:PLTH,Planet 13 Holdings Inc. (CNSX:PLTH)
+1813814,pharma,Drugs (Pharmaceutical),NasdaqGS:MNMD,Mind Medicine (MindMed) Inc. (NasdaqGS:MNMD)
+1815776,pharma,Drugs (Pharmaceutical),NasdaqGS:LENZ,"LENZ Therapeutics, Inc. (NasdaqGS:LENZ)"
+1815903,pharma,Drugs (Pharmaceutical),OTCPK:PTPI,"Petros Pharmaceuticals, Inc. (OTCPK:PTPI)"
+1815974,pharma,Drugs (Pharmaceutical),NasdaqCM:ANEB,"Anebulo Pharmaceuticals, Inc. (NasdaqCM:ANEB)"
+1819253,pharma,Drugs (Pharmaceutical),NasdaqGM:BTMD,biote Corp. (NasdaqGM:BTMD)
+1819576,pharma,Drugs (Pharmaceutical),NasdaqCM:LQDA,Liquidia Corporation (NasdaqCM:LQDA)
+1819790,pharma,Drugs (Pharmaceutical),NasdaqGS:TARS,"Tarsus Pharmaceuticals, Inc. (NasdaqGS:TARS)"
+1820190,pharma,Drugs (Pharmaceutical),NasdaqCM:SCLX,Scilex Holding Company (NasdaqCM:SCLX)
+1821825,pharma,Drugs (Pharmaceutical),NYSE:OGN,Organon & Co. (NYSE:OGN)
+1831363,pharma,Drugs (Pharmaceutical),NasdaqGS:TERN,"Terns Pharmaceuticals, Inc. (NasdaqGS:TERN)"
+1834105,pharma,Drugs (Pharmaceutical),NYSEAM:IBO,Impact BioMedical Inc. (NYSEAM:IBO)
+1835579,pharma,Drugs (Pharmaceutical),NasdaqCM:IMA,"ImageneBio, Inc. (NasdaqCM:IMA)"
+1842295,pharma,Drugs (Pharmaceutical),NasdaqGM:MAZE,"Maze Therapeutics, Inc. (NasdaqGM:MAZE)"
+1842952,pharma,Drugs (Pharmaceutical),NasdaqCM:CNTX,Context Therapeutics Inc. (NasdaqCM:CNTX)
+1847345,pharma,Drugs (Pharmaceutical),NasdaqCM:ASBP,"Aspire Biopharma Holdings, Inc. (NasdaqCM:ASBP)"
+1847367,pharma,Drugs (Pharmaceutical),NasdaqGS:ALMS,Alumis Inc. (NasdaqGS:ALMS)
+1848416,pharma,Drugs (Pharmaceutical),NEOE:VRNO,Verano Holdings Corp. (NEOE:VRNO)
+1851194,pharma,Drugs (Pharmaceutical),NasdaqGS:VTYX,"Ventyx Biosciences, Inc. (NasdaqGS:VTYX)"
+1855175,pharma,Drugs (Pharmaceutical),NasdaqGS:CTNM,"Contineum Therapeutics, Inc. (NasdaqGS:CTNM)"
+1856725,pharma,Drugs (Pharmaceutical),NasdaqGM:RANI,"Rani Therapeutics Holdings, Inc. (NasdaqGM:RANI)"
+1858685,pharma,Drugs (Pharmaceutical),NasdaqCM:BFRI,Biofrontera Inc. (NasdaqCM:BFRI)
+1862150,pharma,Drugs (Pharmaceutical),NasdaqCM:CING,Cingulate Inc. (NasdaqCM:CING)
+1867066,pharma,Drugs (Pharmaceutical),NasdaqCM:DERM,Journey Medical Corporation (NasdaqCM:DERM)
+1867096,pharma,Drugs (Pharmaceutical),NasdaqGS:XERS,"Xeris Biopharma Holdings, Inc. (NasdaqGS:XERS)"
+1880438,pharma,Drugs (Pharmaceutical),NasdaqGS:ANTX,"AN2 Therapeutics, Inc. (NasdaqGS:ANTX)"
+1885522,pharma,Drugs (Pharmaceutical),NasdaqGS:NMRA,"Neumora Therapeutics, Inc. (NasdaqGS:NMRA)"
+1886799,pharma,Drugs (Pharmaceutical),OTCPK:BGXX.Q,Bright Green Corporation (OTCPK:BGXX.Q)
+1904286,pharma,Drugs (Pharmaceutical),NasdaqCM:MIRA,"MIRA Pharmaceuticals, Inc. (NasdaqCM:MIRA)"
+1909747,pharma,Drugs (Pharmaceutical),OTCPK:JUSH.F,Jushi Holdings Inc. (OTCPK:JUSH.F)
+1913577,pharma,Drugs (Pharmaceutical),OTCPK:SMNR,"Semnur Pharmaceuticals, Inc. (OTCPK:SMNR)"
+1937993,pharma,Drugs (Pharmaceutical),NasdaqCM:CVKD,"Cadrenal Therapeutics, Inc. (NasdaqCM:CVKD)"
+1946563,pharma,Drugs (Pharmaceutical),NasdaqCM:SXTP,"60 Degrees Pharmaceuticals, Inc. (NasdaqCM:SXTP)"
+1971532,pharma,Drugs (Pharmaceutical),NasdaqCM:TELO,"Telomir Pharmaceuticals, Inc. (NasdaqCM:TELO)"
+1979414,pharma,Drugs (Pharmaceutical),NasdaqGM:NTHI,"NeOnc Technologies Holdings, Inc. (NasdaqGM:NTHI)"
+1984086,pharma,Drugs (Pharmaceutical),NasdaqGM:SEPN,"Septerna, Inc. (NasdaqGM:SEPN)"
+1999480,pharma,Drugs (Pharmaceutical),NYSE:ANRO,"Alto Neuroscience, Inc. (NYSE:ANRO)"
+2012593,pharma,Drugs (Pharmaceutical),NasdaqGM:RAPP,"Rapport Therapeutics, Inc. (NasdaqGM:RAPP)"
+2023016,pharma,Drugs (Pharmaceutical),NasdaqGM:TTRX,Turn Therapeutics Inc. (NasdaqGM:TTRX)
+2025942,pharma,Drugs (Pharmaceutical),NasdaqCM:CURX,Curanex Pharmaceuticals Inc (NasdaqCM:CURX)

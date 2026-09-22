@@ -1,0 +1,23 @@
+# Secrets
+.env
+*.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Written by the running app
+chat_history/
+
+# Raw SEC downloads and intermediates; rebuild with fetch_frames.py and build_*.py
+data/*.zip
+data/frames_panel.csv
+data/*.log
+
+# Local tooling and scratch output
+.claude/
+graphify-out/
+screenshots/
+backend/oes_*.html
