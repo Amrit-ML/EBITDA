@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  body {
+    @apply bg-n-7 font-sans text-n-7 antialiased dark:text-n-1;
+  }
+  :focus-visible {
+    outline: 2px solid #2369d2;
+    outline-offset: 2px;
+  }
+  ::selection {
+    background: rgba(35, 105, 210, 0.2);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      /* A staggered entrance would otherwise hold items invisible for the
+         length of their delay before snapping in. */
+      animation-delay: 0ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Thin, quiet scrollbars inside the panels. */
+  .scroll-quiet {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(108, 114, 117, 0.35) transparent;
+  }
+}
