@@ -12,7 +12,7 @@ from typing import Literal, Optional
 
 from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from pydantic import BaseModel, Field
 
 import config
@@ -621,3 +621,23 @@ def delete_session(session_id: str):
     if not history.delete_session(session_id):
         raise HTTPException(404, "This diagnostic was not found.")
     return {"deleted": session_id}
+
+
+# --- The built web app (frontend/dist), for single-service hosting ----------
+# In development Vite serves the pages and proxies /api here. In production
+# (e.g. Render) `npm run build` writes frontend/dist and this app serves it,
+# so pages and API share one origin and the frontend's relative /api calls
+# work unchanged. Registered last, so every /api route above wins.
+FRONTEND_DIST = config.PROJECT_DIR / "frontend" / "dist"
+
+if FRONTEND_DIST.is_dir():
+    @app.get("/{path:path}", include_in_schema=False)
+    def web_app(path: str):
+        if path.startswith("api/"):
+            raise HTTPException(404, "Not found.")
+        file = (FRONTEND_DIST / path).resolve()
+        # A real built file (script, style, image) is served as is; anything
+        # else is a page of the single-page app, so it gets index.html.
+        if path and file.is_file() and FRONTEND_DIST.resolve() in file.parents:
+            return FileResponse(file)
+        return FileResponse(FRONTEND_DIST / "index.html")

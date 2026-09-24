@@ -1,0 +1,31 @@
+# Render Blueprint: one web service that serves both the API and the built
+# frontend (backend/main.py serves frontend/dist). Secrets are marked
+# sync: false, so Render asks for them in the dashboard and they never live
+# in the repo.
+services:
+  - type: web
+    name: ebitda-engine
+    runtime: python
+    plan: free
+    buildCommand: >-
+      pip install -r backend/requirements.txt &&
+      cd frontend && npm ci && npm run build
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/industries
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: NODE_VERSION
+        value: 24.19.0
+      # Diagnostic chat: Azure AI Foundry (OpenAI-compatible), Mistral Large 3.
+      - key: LLM_PROVIDER
+        value: azure
+      - key: AZURE_OPENAI_ENDPOINT
+        value: https://ai-catalant.services.ai.azure.com/openai/v1
+      - key: AZURE_OPENAI_DEPLOYMENT
+        value: Mistral-Large-3
+      - key: AZURE_OPENAI_API_KEY
+        sync: false
+      # Company documents search (optional; uploads work without it).
+      - key: PINECONE_APIKEY
+        sync: false
