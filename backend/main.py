@@ -633,7 +633,8 @@ FRONTEND_DIST = config.PROJECT_DIR / "frontend" / "dist"
 if FRONTEND_DIST.is_dir():
     @app.get("/{path:path}", include_in_schema=False)
     def web_app(path: str):
-        if path.startswith("api/"):
+        # Unknown API paths stay 404s (".." in an id collapses to "/api").
+        if path == "api" or path.startswith("api/"):
             raise HTTPException(404, "Not found.")
         file = (FRONTEND_DIST / path).resolve()
         # A real built file (script, style, image) is served as is; anything
