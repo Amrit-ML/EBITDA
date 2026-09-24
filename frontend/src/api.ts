@@ -290,6 +290,8 @@ export interface InsightMetric {
   lower_is_better: boolean
   value: number | null
   benchmark: number
+  /** damodaran: US industry margins (NYU Stern); example: a placeholder. */
+  benchmark_source: 'damodaran' | 'example'
   difference: number | null
   difference_unit: 'pp' | '%'
   favourable: boolean | null
@@ -297,14 +299,32 @@ export interface InsightMetric {
   missing: string | null
   /** What would fill the gap, so the card can offer it as a button. */
   action: 'add_total_fte' | 'add_sga_fte' | 'reupload' | null
+  /** The two growth rates behind the growth gap, as fractions; null elsewhere. */
+  parts: { sga_growth: number; revenue_growth: number } | null
+}
+
+/** An unfavourable ratio with where to look and a first step. No savings:
+ *  opportunities only. */
+export interface Improvement {
+  key: string
+  label: string
+  difference: number
+  difference_unit: 'pp' | '%'
+  area: string
+  why: string
+  first_step: string
 }
 
 export interface Insights {
   industry: string
   benchmarks_are_placeholder: boolean
+  /** Where the real peer figures come from, for the page notes. */
+  benchmark_source_note: string | null
   headcount: { total_fte: number | null; sga_fte: number | null }
   growth_basis: string | null
   metrics: InsightMetric[]
+  /** Unfavourable ratios, largest gap first. */
+  improvements: Improvement[]
 }
 
 export const getInsights = (companyId: string, industry: string) =>

@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react'
 import { AlertTriangle, LayoutGrid, Loader2, Table2, Users } from 'lucide-react'
-import { getInsights, saveHeadcount, type EbitdaHistory, type Insights,
-         type TrendAnalysis } from '../api'
+import { getInsights, saveHeadcount, type Insights } from '../api'
 import { metricValue } from '../format'
 import { cn } from '@/lib/utils'
-import { Difference, InsightsDashboard } from './InsightsDashboard'
-import { TrendSection } from './TrendSection'
+import { ImprovementPlan, InsightsDashboard, Verdict } from './InsightsDashboard'
 
 const count = (n: number) => n.toLocaleString(undefined, { maximumFractionDigits: 1 })
 
@@ -112,8 +110,6 @@ export function InsightsView({
   companyId,
   industry,
   industryLabel,
-  trend,
-  history,
   onUpload,
 }: {
   companyId: string
@@ -121,9 +117,6 @@ export function InsightsView({
   industryLabel: string
   /** Opens the P&L upload, for a ratio that needs the file read again. */
   onUpload: () => void
-  /** For display only: the growth ratio reads the trend saved on the server. */
-  trend: TrendAnalysis | null
-  history: EbitdaHistory | null
 }) {
   const [data, setData] = useState<Insights | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -202,29 +195,14 @@ export function InsightsView({
 
   return (
     <div>
-      {/* The P&L's own trend first: real figures, before the benchmarks. */}
-      {(trend || history) && (
-        <div className="mb-12 empty:hidden">
-          <TrendSection trend={trend} history={history} />
-        </div>
-      )}
-
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h2 className="font-display text-2xl font-bold tracking-tight">Overhead and productivity</h2>
           <p className="mt-1 text-base leading-6 text-n-4 dark:text-n-4d">
-            Eight ratios from your P&amp;L, each against a {industryLabel.toLowerCase()} benchmark.
+            Eight ratios from your P&amp;L, each compared with the {industryLabel.toLowerCase()} industry.
           </p>
         </div>
         <div className="flex shrink-0 items-center gap-2">
-          {data?.benchmarks_are_placeholder && (
-            <span
-              className="rounded-md bg-accent-5/15 px-2.5 py-1 font-display text-xs font-semibold text-[#8A5F00] dark:text-accent-5"
-              title="These benchmark figures are examples, not measured peer data yet"
-            >
-              Example benchmarks
-            </span>
-          )}
           <div
             role="radiogroup"
             aria-label="Layout"
@@ -328,20 +306,24 @@ export function InsightsView({
             <div className="mt-6">
               <InsightsDashboard
                 metrics={data.metrics}
+                improvements={data.improvements}
                 onAddHeadcount={requestHeadcount}
                 onUpload={onUpload}
               />
             </div>
           ) : (
+          <>
+          <div className="mt-6">
+            <ImprovementPlan items={data.improvements} />
+          </div>
           <div className="scroll-quiet mt-6 overflow-x-auto rounded-xl border border-n-3 dark:border-n-5">
             <table className="w-full min-w-[34rem] font-display text-sm">
               <thead className="whitespace-nowrap bg-n-2 text-left text-xs text-n-4 dark:bg-n-7 dark:text-n-4d">
                 <tr>
                   <th scope="col" className="px-4 py-3 font-semibold">Metric</th>
-                  <th scope="col" className="hidden px-4 py-3 font-semibold lg:table-cell">Formula</th>
-                  <th scope="col" className="px-4 py-3 text-right font-semibold">Your company</th>
-                  <th scope="col" className="px-4 py-3 text-right font-semibold">vs benchmark</th>
-                  <th scope="col" className="px-4 py-3 text-right font-semibold">Benchmark</th>
+                  <th scope="col" className="px-4 py-3 text-right font-semibold">You</th>
+                  <th scope="col" className="px-4 py-3 text-right font-semibold">Industry</th>
+                  <th scope="col" className="px-4 py-3 font-semibold">Variance to industry</th>
                 </tr>
               </thead>
               <tbody>
@@ -349,37 +331,38 @@ export function InsightsView({
                   <tr key={m.key} className="border-t border-n-3 align-middle dark:border-n-5">
                     <th scope="row" className="px-4 py-3 text-left font-semibold">
                       {m.label}
-                      {/* On narrower screens the formula rides under the name. */}
-                      <span className="mt-0.5 block text-xs font-normal text-n-4 lg:hidden dark:text-n-4d">
-                        {m.formula}
-                      </span>
                     </th>
-                    <td className="hidden px-4 py-3 text-n-4 lg:table-cell dark:text-n-4d">{m.formula}</td>
-                    {m.value === null ? (
-                      <td colSpan={2} className="px-4 py-3 text-right text-xs text-n-4 dark:text-n-4d">
-                        {m.missing}
-                      </td>
-                    ) : (
-                      <>
-                        <td className="px-4 py-3 text-right font-semibold tabular-nums">
-                          {metricValue(m.kind, m.value)}
-                        </td>
-                        <td className="px-4 py-3 text-right">
-                          <Difference m={m} />
-                        </td>
-                      </>
-                    )}
+                    <td className="px-4 py-3 text-right font-semibold tabular-nums">
+                      {m.value === null ? '—' : metricValue(m.kind, m.value)}
+                    </td>
                     <td className="px-4 py-3 text-right tabular-nums text-n-4 dark:text-n-4d">
                       {metricValue(m.kind, m.benchmark)}
+                      {m.benchmark_source === 'example' && (
+                        <span className="block text-[0.6875rem]">example</span>
+                      )}
+                    </td>
+                    <td className="px-4 py-3">
+                      {m.value === null ? (
+                        <span className="text-xs text-n-4 dark:text-n-4d">{m.missing}</span>
+                      ) : (
+                        <Verdict m={m} className="whitespace-nowrap" />
+                      )}
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          </>
           )}
 
           <ul className="mt-4 space-y-1 text-xs leading-5 text-n-4 dark:text-n-4d">
+            <li>
+              Industry means US listed {industryLabel.toLowerCase()} companies. Green indicates a
+              favourable variance to the industry, amber an unfavourable one. For cost
+              ratios such as SG&amp;A a lower figure is favourable; for output per employee a higher
+              figure is favourable.
+            </li>
             <li>
               Percentages are compared in percentage points (pp). Dollar figures are compared in
               percent, because percentage points do not apply to dollars.
@@ -389,8 +372,17 @@ export function InsightsView({
                 ? `Growth is measured from ${data.growth_basis}, the periods in your P&L.`
                 : 'Growth needs a P&L with two or more periods.'}
             </li>
+            {data.benchmark_source_note && (
+              <li>
+                Industry figures for the SG&amp;A ratios: {data.benchmark_source_note}. These are
+                industry totals, so large companies weigh more.
+              </li>
+            )}
             {data.benchmarks_are_placeholder && (
-              <li>Benchmarks are example figures until peer data is connected.</li>
+              <li>
+                Industry figures marked example are placeholders: no public source reports
+                growth or headcount for the industry yet.
+              </li>
             )}
           </ul>
         </>

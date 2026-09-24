@@ -33,6 +33,11 @@ BENCHMARKS_PATH = Path(os.environ.get(
 INDUSTRY_MAP_PATH = Path(os.environ.get(
     "INDUSTRY_MAP_PATH", PROJECT_DIR / "data" / "industry_map.csv"))
 
+# Damodaran's US margins by industry (build_damodaran.py): the Insights peer
+# figures for the SG&A ratios.
+DAMODARAN_PATH = Path(os.environ.get(
+    "DAMODARAN_PATH", PROJECT_DIR / "data" / "damodaran_margins.csv"))
+
 # Saved diagnostics and uploaded P&Ls (core/history.py), one JSON file each.
 # Delete the folder to clear every saved conversation.
 HISTORY_DIR = Path(os.environ.get("HISTORY_DIR", PROJECT_DIR / "chat_history"))

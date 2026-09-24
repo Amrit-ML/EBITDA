@@ -15,6 +15,23 @@ from main import app
 SAMPLES = Path(__file__).resolve().parents[2] / "samples"
 
 
+# Fixed Damodaran rows, so tests do not move when the real file is rebuilt.
+DAMODARAN_CSV = """industry,source_industry,firms,gross_margin,sga_pct_revenue,as_of
+biotech,Drugs (Biotechnology),496,0.60,0.30,January 2026
+pharma,Drugs (Pharmaceutical),228,0.72,0.22,January 2026
+"""
+
+
+@pytest.fixture(autouse=True)
+def damodaran_file(tmp_path, monkeypatch):
+    path = tmp_path / "damodaran_margins.csv"
+    path.write_text(DAMODARAN_CSV, encoding="utf-8")
+    monkeypatch.setattr(config, "DAMODARAN_PATH", path)
+    insights.damodaran.cache_clear()
+    yield path
+    insights.damodaran.cache_clear()
+
+
 @pytest.fixture
 def client():
     with TestClient(app) as c:
@@ -31,11 +48,13 @@ def test_sga_shares_compare_in_percentage_points():
     m = by_key(insights.compute(PORTCOS["pharma-sample"], "pharma"))
     rev = m["sga_pct_revenue"]
     assert rev["value"] == pytest.approx(0.34)
-    assert rev["difference"] == pytest.approx(2.0)          # 34% vs 32%
+    assert rev["difference"] == pytest.approx(12.0)         # 34% vs 22%
     assert rev["difference_unit"] == "pp" and rev["favourable"] is False
     gp = m["sga_pct_gross_profit"]
     assert gp["value"] == pytest.approx(163.2 / 264)
-    assert gp["difference"] == pytest.approx((163.2 / 264 - 0.53) * 100)
+    # Peer SG&A / gross profit = (SG&A / sales) / gross margin.
+    assert gp["benchmark"] == pytest.approx(0.22 / 0.72)
+    assert gp["difference"] == pytest.approx((163.2 / 264 - 0.22 / 0.72) * 100)
 
 
 def test_per_employee_rows_ask_for_headcount_until_given():
@@ -57,10 +76,24 @@ def test_dollar_rows_compare_in_percent_and_respect_direction():
     assert fte["difference"] == pytest.approx(-3.0) and fte["favourable"] is True
 
 
-def test_benchmarks_are_marked_as_placeholders():
+def test_sga_ratios_use_damodaran_and_the_rest_are_marked_examples():
     r = insights.compute(PORTCOS["pharma-sample"], "biotech")
+    m = by_key(r)
+    assert m["sga_pct_revenue"]["benchmark"] == pytest.approx(0.30)
+    assert m["sga_pct_revenue"]["benchmark_source"] == "damodaran"
+    assert m["sga_pct_gross_profit"]["benchmark_source"] == "damodaran"
+    assert m["revenue_per_employee"]["benchmark_source"] == "example"
     assert r["benchmarks_are_placeholder"] is True
-    assert by_key(r)["sga_pct_revenue"]["benchmark"] == 0.51
+    assert "Damodaran" in r["benchmark_source_note"] and "496" in r["benchmark_source_note"]
+
+
+def test_without_the_damodaran_file_every_benchmark_is_an_example(damodaran_file):
+    damodaran_file.unlink()
+    insights.damodaran.cache_clear()
+    r = insights.compute(PORTCOS["pharma-sample"], "pharma")
+    assert {m["benchmark_source"] for m in r["metrics"]} == {"example"}
+    assert by_key(r)["sga_pct_revenue"]["benchmark"] == 0.32
+    assert r["benchmark_source_note"] is None
 
 
 def test_growth_gap_needs_two_periods_then_measures_first_to_latest(client):
@@ -127,3 +160,41 @@ def test_replacing_a_pl_keeps_its_headcount(client):
     r = client.get(f"/api/companies/{second}/insights").json()
     assert r["headcount"] == {"total_fte": 640, "sga_fte": 150}
     assert client.get(f"/api/companies/{upload()}/insights").json()["headcount"]["total_fte"] is None
+
+
+def _with_trend(sga, revenue):
+    return {**PORTCOS["pharma-sample"], "trend": {
+        "periods": ["Q1 2025", "Q4 2025"], "revenue": revenue, "sga": sga, "ebitda": [1, 1]}}
+
+
+def test_growth_gap_reports_the_two_rates_behind_it():
+    g = by_key(insights.compute(_with_trend([100, 120], [200, 220]), "pharma"))[
+        "sga_growth_vs_revenue_growth"]
+    assert g["value"] == pytest.approx(10.0)
+    assert g["parts"] == {"sga_growth": pytest.approx(0.2), "revenue_growth": pytest.approx(0.1)}
+    assert by_key(insights.compute(PORTCOS["pharma-sample"], "pharma"))[
+        "sga_pct_revenue"]["parts"] is None
+
+
+def test_a_gap_that_rounds_to_zero_is_level_not_worse():
+    # SG&A +10.03%, revenue +10% -> +0.03 pp, shown as "+0.0 pp".
+    g = by_key(insights.compute(_with_trend([100_000, 110_030], [100_000, 110_000]), "pharma"))[
+        "sga_growth_vs_revenue_growth"]
+    assert g["difference"] == pytest.approx(0.03)
+    assert g["favourable"] is None
+
+
+def test_improvements_cover_every_unfavourable_ratio_largest_gap_first():
+    c = {**PORTCOS["pharma-sample"], "headcount": {"total_fte": 1300, "sga_fte": 400}}
+    r = insights.compute(c, "pharma")
+    unfavourable = {m["key"] for m in r["metrics"] if m["favourable"] is False}
+    imp = r["improvements"]
+    assert {i["key"] for i in imp} == unfavourable
+    assert all(i["area"] and i["why"] and i["first_step"] for i in imp)
+    # SG&A % revenue: 34% vs 22% is a far larger gap than SG&A FTE 30.8% vs 28%.
+    keys = [i["key"] for i in imp]
+    assert keys.index("sga_pct_revenue") < keys.index("sga_fte_pct")
+
+
+def test_every_ratio_has_improvement_wording():
+    assert {k for k, *_ in insights.METRICS} == set(insights.IMPROVEMENTS)

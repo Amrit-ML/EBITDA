@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { AlertTriangle, ListChecks, Menu, Plus } from 'lucide-react'
-import { deleteSession, getDocuments, getEbitdaHistory, getIndustries,
+import { deleteSession, getDocuments, getIndustries,
          getSavedSession, listSessions, sendMessageStream, startSessionStream,
-         type EbitdaHistory, type SessionSummary, type TrendAnalysis } from './api'
+         type SessionSummary } from './api'
 import type { AgentTurn, ChatMessage, CompanySummary, Finding, Industry } from './types'
 import { useTheme } from '@/lib/theme'
 import { cn } from '@/lib/utils'
@@ -23,8 +23,6 @@ export default function App() {
 
   // The P&L being diagnosed, and what its upload told us.
   const [pl, setPl] = useState<CompanySummary | null>(null)
-  const [trend, setTrend] = useState<TrendAnalysis | null>(null)
-  const [history, setHistory] = useState<EbitdaHistory | null>(null)
   const [docCounts, setDocCounts] = useState<Record<string, number>>({})
 
   const [sessionId, setSessionId] = useState<string | null>(null)
@@ -63,9 +61,6 @@ export default function App() {
   useEffect(() => {
     if (!plId) return
     let live = true
-    getEbitdaHistory(plId)
-      .then((h) => live && setHistory(h))
-      .catch(() => live && setHistory(null))
     getDocuments(plId)
       .then((d) => live && setDocCounts((prev) => ({ ...prev, [plId]: d.results.length })))
       .catch(() => {
@@ -127,7 +122,6 @@ export default function App() {
       const s = await getSavedSession(id)
       setPl(s.company)
       setIndustryId(s.industry)
-      setTrend(s.trend)
       setSessionId(s.session_id)
       setMessages(
         s.messages.map((m) => ({
@@ -322,7 +316,7 @@ export default function App() {
                 </h1>
                 {industryLabel && (
                   <span className="hidden shrink-0 rounded-md bg-n-2 px-2 py-1 font-display text-xs font-semibold text-n-4 md:inline dark:bg-n-7 dark:text-n-4d">
-                    vs {industryLabel.toLowerCase()} peers
+                    vs {industryLabel.toLowerCase()} industry
                   </span>
                 )}
                 {!onInsights && diagnosticActions}
@@ -373,8 +367,6 @@ export default function App() {
                     companyId={pl!.id}
                     industry={industryId}
                     industryLabel={industryLabel}
-                    trend={trend}
-                    history={history}
                     onUpload={openUpload}
                   />
                 ) : inConversation ? (
@@ -441,10 +433,9 @@ export default function App() {
           industryLabel={industryLabel}
           carryContextFrom={plId}
           onClose={() => setUploadOpen(false)}
-          onCreated={(c, t) => {
+          onCreated={(c) => {
             setUploadOpen(false)
             setPl(c)
-            setTrend(t)
             resetSession()
           }}
         />

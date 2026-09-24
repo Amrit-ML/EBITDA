@@ -122,11 +122,14 @@ export function shortPeriod(p: string) {
  *  "+1.5 pp", a dollar figure as "$400K". */
 export function metricValue(kind: 'pct' | 'pp' | 'usd', v: number): string {
   if (kind === 'usd') return money(v, 1)
-  if (kind === 'pp') return `${v > 0 ? '+' : v < 0 ? '−' : ''}${Math.abs(v).toFixed(1)} pp`
+  if (kind === 'pp') return metricDifference(v, 'pp')
   return `${(v * 100).toFixed(1)}%`
 }
 
 /** The gap to a benchmark: "+2.0 pp" for shares, "−27.3%" for dollars. */
 export function metricDifference(d: number, unit: 'pp' | '%'): string {
-  return `${d > 0 ? '+' : d < 0 ? '−' : ''}${Math.abs(d).toFixed(1)}${unit === 'pp' ? ' pp' : '%'}`
+  const shown = Math.abs(d).toFixed(1)
+  // No sign on a gap that rounds away: "0.0 pp", never "−0.0 pp".
+  const sign = Number(shown) === 0 ? '' : d > 0 ? '+' : '−'
+  return `${sign}${shown}${unit === 'pp' ? ' pp' : '%'}`
 }

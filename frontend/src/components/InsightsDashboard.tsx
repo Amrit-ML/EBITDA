@@ -1,5 +1,5 @@
-import { AlertTriangle, CheckCircle2, ChevronsRight, Upload, UserPlus } from 'lucide-react'
-import type { InsightMetric } from '../api'
+import { ArrowDown, ArrowUp, Upload, UserPlus } from 'lucide-react'
+import type { Improvement, InsightMetric } from '../api'
 import { metricDifference, metricValue } from '../format'
 import { cn } from '@/lib/utils'
 
@@ -8,24 +8,15 @@ type Status = 'better' | 'worse' | 'level' | 'missing'
 const status = (m: InsightMetric): Status =>
   m.value === null ? 'missing' : m.favourable === null ? 'level' : m.favourable ? 'better' : 'worse'
 
-// Bar fills sit on a light track, so light mode uses deeper tones than the
-// brand green and amber to keep 3:1 against it; dark mode can use the brand.
+// Bars run a light-to-deep gradient toward their value end. Light mode ends
+// on deeper tones than the brand green and amber to keep 3:1 against the
+// white card; dark mode can end on the brand colours.
 const FILL: Record<Status, string> = {
-  better: 'bg-[#1F9D55] dark:bg-primary-2',
-  worse: 'bg-[#B7791F] dark:bg-accent-5',
-  level: 'bg-n-4 dark:bg-n-4d',
+  better: 'bg-gradient-to-r from-[#5CCF93] to-[#1F9D55] dark:from-primary-2/50 dark:to-primary-2',
+  worse: 'bg-gradient-to-r from-[#E4BA6A] to-[#B7791F] dark:from-accent-5/50 dark:to-accent-5',
+  level: 'bg-gradient-to-r from-n-4/50 to-n-4 dark:from-n-4d/50 dark:to-n-4d',
   missing: 'bg-n-3 dark:bg-n-5',
 }
-const INK: Record<Status, string> = {
-  better: 'text-[#1F9D55] dark:text-primary-2',
-  worse: 'text-[#B7791F] dark:text-accent-5',
-  level: 'text-n-4 dark:text-n-4d',
-  missing: 'text-n-4 dark:text-n-4d',
-}
-
-// Past this multiple of the benchmark a bar stops growing and shows an
-// off-scale marker, so the benchmark tick is never squeezed to the edge.
-const SCALE_CAP = 2.5
 
 // The two groups the eight ratios fall into. Order follows the reader's
 // question: is overhead too heavy, then are people productive.
@@ -56,116 +47,118 @@ function multipleOf(m: InsightMetric): number | null {
   return x >= 2 ? x : null
 }
 
-/** The gap to the benchmark as a chip. Colour says good or bad; the icon and
- *  the spoken words say it too, so the verdict never rests on colour alone. */
-export function Difference({ m }: { m: InsightMetric }) {
-  if (m.difference === null) return <span className="text-n-4 dark:text-n-4d">—</span>
-  const x = multipleOf(m)
-  const text = x !== null ? `${x.toFixed(1)}×` : metricDifference(m.difference, m.difference_unit)
-  const spoken = x !== null ? `, ${x.toFixed(1)} times the benchmark` : ''
+/** The variance to the industry in standard reporting terms:
+ *  "Unfavourable · 12.1 pp above industry". The arrow gives the direction, the word and colour
+ *  the verdict, so the verdict never rests on colour alone. */
+export function Verdict({ m, className }: { m: InsightMetric; className?: string }) {
+  if (m.difference === null) return null
   if (m.favourable === null) {
     return (
-      <span className="whitespace-nowrap rounded-md bg-n-3 px-2 py-1 font-display text-xs font-semibold tabular-nums text-n-4 dark:bg-n-5 dark:text-n-4d">
-        {text}
-        <span className="sr-only">. Level with the benchmark.</span>
-      </span>
+      <p className={cn('font-display text-sm font-semibold text-n-4 dark:text-n-4d', className)}>
+        In line with industry
+      </p>
     )
   }
+  const x = multipleOf(m)
+  // Unsigned: the words "above" and "below" carry the direction.
+  const gap = metricDifference(Math.abs(m.difference), m.difference_unit).replace(/^\+/, '')
+  const detail =
+    x !== null ? `${x.toFixed(1)}× industry` : `${gap} ${m.difference > 0 ? 'above' : 'below'} industry`
   const good = m.favourable
-  const Icon = good ? CheckCircle2 : AlertTriangle
-  const verdict = good ? 'Better than the benchmark' : 'Worse than the benchmark'
+  const Arrow = m.difference > 0 ? ArrowUp : ArrowDown
   return (
-    <span
-      title={`${verdict}${spoken}`}
-      className={cn(
-        'inline-flex items-center gap-1 whitespace-nowrap rounded-md px-2 py-1 font-display text-xs font-semibold tabular-nums',
-        good
-          ? 'bg-primary-2/15 text-[#178A43] dark:text-primary-2'
-          : 'bg-accent-5/15 text-[#8A5F00] dark:text-accent-5'
-      )}
-    >
-      <Icon className="h-3.5 w-3.5" aria-hidden="true" />
-      {text}
-      <span className="sr-only">
-        {spoken}. {verdict}.
+    <p className={cn('flex flex-wrap items-center gap-x-1.5 font-display text-sm text-n-4 dark:text-n-4d', className)}>
+      <span
+        className={cn(
+          'font-semibold',
+          good ? 'text-[#178A43] dark:text-primary-2' : 'text-[#8A5F00] dark:text-accent-5'
+        )}
+      >
+        {good ? 'Favourable' : 'Unfavourable'}
       </span>
-    </span>
+      <span className="inline-flex items-center gap-0.5 tabular-nums">
+        · <Arrow className="h-3.5 w-3.5" aria-hidden="true" />
+        {detail}
+      </span>
+    </p>
   )
 }
 
-/** A bullet bar: the company's value as a fill, the benchmark as a tick.
- *  A scale that can go negative (a growth gap, or EBITDA for a loss-making
- *  company) runs either side of a zero line; otherwise it starts at zero. */
-function Bullet({ m }: { m: InsightMetric }) {
-  const v = m.value
-  const b = m.benchmark
-  const diverging = m.kind === 'pp' || (v ?? 0) < 0 || b < 0
-  let lo: number
-  let hi: number
-  if (diverging) {
-    const r = Math.max(Math.abs(v ?? 0), Math.abs(b), m.kind === 'pp' ? 2 : 1) * 1.3
-    const capped = Math.abs(b) > 0 ? Math.min(r, Math.abs(b) * SCALE_CAP * 1.3) : r
-    lo = -capped
-    hi = capped
-  } else {
-    lo = 0
-    const top = Math.max(v ?? 0, b) * 1.25 || 1
-    hi = b > 0 ? Math.min(top, b * SCALE_CAP) : top
-  }
-  const clamp = (x: number) => Math.min(hi, Math.max(lo, x))
-  const pos = (x: number) => ((clamp(x) - lo) / (hi - lo)) * 100
-  const offScale = v !== null && (v > hi || v < lo)
-  const zero = pos(0)
-  const start = v === null ? zero : diverging ? Math.min(zero, pos(v)) : 0
-  const width = v === null ? 0 : diverging ? Math.abs(pos(v) - zero) : pos(v)
-  const label =
-    v === null
-      ? `Benchmark ${metricValue(m.kind, b)}; your figure is not available yet`
-      : `Your company ${metricValue(m.kind, v)} against a benchmark of ${metricValue(m.kind, b)}${offScale ? ', beyond the end of the scale' : ''}`
+interface BarRow {
+  label: string
+  value: number | null
+  text: string
+  fill: string
+}
 
+/** A two-bar comparison: each row a label, a bar from zero, and its value.
+ *  Plain lengths against a shared scale, so "which is bigger" is read at a
+ *  glance. If either value is negative (a loss, a shrinking line), zero moves
+ *  to the middle and bars run left or right of it. */
+function CompareBars({ rows, label }: { rows: BarRow[]; label: string }) {
+  const nums = rows.map((r) => r.value).filter((v): v is number => v !== null)
+  const max = Math.max(...nums.map(Math.abs), 0) || 1
+  const diverging = nums.some((v) => v < 0)
+  const zero = diverging ? 50 : 0
+  const span = diverging ? 50 : 100
   return (
-    <div className="relative h-6" role="img" aria-label={label}>
-      <div className="absolute inset-x-0 top-1/2 h-2.5 -translate-y-1/2 rounded-full bg-n-2 dark:bg-n-7" />
-      {diverging && (
-        <div
-          className="absolute top-1/2 h-4 w-px -translate-y-1/2 bg-n-4/40"
-          style={{ left: `${zero}%` }}
-          aria-hidden="true"
-        />
-      )}
-      {v !== null && width > 0 && (
-        <div
-          className={cn(
-            'absolute top-1/2 h-2.5 -translate-y-1/2 animate-grow-x',
-            // An off-scale end is squared off where the chevron takes over.
-            offScale ? (v > 0 ? 'rounded-l-full' : 'rounded-r-full') : 'rounded-full',
-            FILL[status(m)]
-          )}
-          style={{
-            left: `${start}%`,
-            width: `${width}%`,
-            transformOrigin: diverging && v < 0 ? 'right' : 'left',
-          }}
-        />
-      )}
-      {offScale && (
-        <ChevronsRight
-          className={cn(
-            'absolute top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-n-1 dark:bg-n-6',
-            v! > 0 ? '-right-2.5' : '-left-2.5 rotate-180',
-            INK[status(m)]
-          )}
-          strokeWidth={3}
-          aria-hidden="true"
-        />
-      )}
-      <div
-        className="absolute top-0 h-6 w-[3px] -translate-x-1/2 rounded-full bg-n-7 ring-2 ring-n-1 dark:bg-n-1 dark:ring-n-6"
-        style={{ left: `${pos(b)}%` }}
-        aria-hidden="true"
-      />
+    <div role="img" aria-label={label} className="space-y-2">
+      {rows.map((r) => {
+        const w = r.value === null ? 0 : (Math.abs(r.value) / max) * span
+        const left = r.value !== null && r.value < 0 ? zero - w : zero
+        return (
+          <div
+            key={r.label}
+            title={`${r.label}: ${r.text}`}
+            className="grid grid-cols-[4.75rem_1fr_4rem] items-center gap-2 font-display text-xs"
+          >
+            <span className="truncate text-n-4 dark:text-n-4d">{r.label}</span>
+            <div className="relative h-4">
+              {diverging && (
+                <div className="absolute inset-y-0 w-px bg-n-4/40" style={{ left: `${zero}%` }} />
+              )}
+              {w > 0 && (
+                <div
+                  className={cn('absolute inset-y-0 animate-grow-x rounded', r.fill)}
+                  style={{
+                    left: `${left}%`,
+                    width: `${w}%`,
+                    transformOrigin: r.value! < 0 ? 'right' : 'left',
+                  }}
+                />
+              )}
+            </div>
+            <span className="text-right font-semibold tabular-nums text-n-7 dark:text-n-1">
+              {r.text}
+            </span>
+          </div>
+        )
+      })}
     </div>
   )
+}
+
+const PEER_FILL = 'bg-gradient-to-r from-n-3 to-n-4/50 dark:from-n-5 dark:to-n-4d/60'
+
+/** What each card charts. Most compare you with the industry; the growth card
+ *  compares your two growth rates, which is what its 0.0 pp gap is made of. */
+function chartRows(m: InsightMetric): BarRow[] {
+  if (m.parts) {
+    const pct = (v: number) => metricDifference(v * 100, '%')
+    return [
+      { label: 'SG&A', value: m.parts.sga_growth, text: pct(m.parts.sga_growth), fill: FILL[status(m)] },
+      { label: 'Revenue', value: m.parts.revenue_growth, text: pct(m.parts.revenue_growth), fill: PEER_FILL },
+    ]
+  }
+  return [
+    {
+      label: 'You',
+      value: m.value,
+      text: m.value === null ? '—' : metricValue(m.kind, m.value),
+      fill: FILL[status(m)],
+    },
+    { label: 'Industry', value: m.benchmark, text: metricValue(m.kind, m.benchmark), fill: PEER_FILL },
+  ]
 }
 
 export interface MetricActions {
@@ -204,31 +197,33 @@ function MissingValue({ m, actions }: { m: InsightMetric; actions: MetricActions
 
 function MetricCard({ m, actions }: { m: InsightMetric; actions: MetricActions }) {
   return (
-    <article className="flex flex-col rounded-2xl border border-n-3 bg-n-1 p-5 transition-shadow duration-300 hover:shadow-lift dark:border-n-5 dark:bg-n-6">
-      <div className="flex items-start justify-between gap-3">
-        <h4 className="font-display text-[0.9375rem] font-semibold leading-5">{m.label}</h4>
-        {m.value !== null && <Difference m={m} />}
-      </div>
-      <p className="mt-1 font-display text-xs text-n-4 dark:text-n-4d">{m.formula}</p>
+    // Subgrid rows: a title that wraps to two lines pushes its whole row of
+    // cards down together, so values and bars stay level across the row.
+    <article className="row-span-3 grid grid-rows-subgrid gap-y-0 rounded-2xl border border-n-3 bg-gradient-to-b from-n-1 to-n-2/70 p-5 transition-shadow duration-300 hover:shadow-lift dark:border-n-5 dark:from-n-6 dark:to-n-7/60">
+      <h4 className="font-display text-[0.9375rem] font-semibold leading-5">{m.label}</h4>
 
       <div className="mt-4 min-h-10">
         {m.value !== null ? (
-          <p className="font-display text-[2rem] font-bold leading-none tracking-tight tabular-nums">
-            {metricValue(m.kind, m.value)}
-          </p>
+          <>
+            <p className="font-display text-[2rem] font-bold leading-none tracking-tight tabular-nums">
+              {metricValue(m.kind, m.value)}
+            </p>
+            <Verdict m={m} className="mt-2" />
+          </>
         ) : (
           <MissingValue m={m} actions={actions} />
         )}
       </div>
 
-      <div className="mt-auto pt-5">
-        <Bullet m={m} />
-        <p className="mt-2 flex items-center gap-1.5 whitespace-nowrap font-display text-xs text-n-4 dark:text-n-4d">
-          <span className="h-3 w-[3px] rounded-full bg-n-7 dark:bg-n-1" aria-hidden="true" />
-          Benchmark
-          <span className="font-semibold tabular-nums text-n-7 dark:text-n-1">
-            {metricValue(m.kind, m.benchmark)}
-          </span>
+      <div className="self-end pt-5">
+        <CompareBars
+          rows={chartRows(m)}
+          label={chartRows(m).map((r) => `${r.label} ${r.text}`).join(', ')}
+        />
+        <p className="mt-3 font-display text-[0.6875rem] text-n-4 dark:text-n-4d">
+          {m.benchmark_source === 'damodaran'
+            ? 'Industry figure: Damodaran, NYU Stern'
+            : 'Industry figure: example, not real data yet'}
         </p>
       </div>
     </article>
@@ -240,26 +235,26 @@ function Scoreline({ metrics }: { metrics: InsightMetric[] }) {
   const counts: Record<Status, number> = { better: 0, worse: 0, level: 0, missing: 0 }
   for (const m of metrics) counts[status(m)] += 1
   const measured = metrics.length - counts.missing
-  // Better and worse always show, even at zero; the other two only when
+  // Favourable and unfavourable always show, even at zero; the other two only when
   // they have something in them.
   const parts = (
     [
-      { key: 'better', label: 'Better than benchmark' },
-      { key: 'level', label: 'Level' },
-      { key: 'worse', label: 'Worse than benchmark' },
-      { key: 'missing', label: 'Not measured yet' },
+      { key: 'better', label: 'Favourable' },
+      { key: 'level', label: 'In line' },
+      { key: 'worse', label: 'Unfavourable' },
+      { key: 'missing', label: 'Not yet measured' },
     ] as { key: Status; label: string }[]
   ).filter((p) => p.key === 'better' || p.key === 'worse' || counts[p.key] > 0)
 
   return (
     <section
       aria-label="How the ratios compare"
-      className="rounded-2xl border border-n-3 bg-n-1 p-5 dark:border-n-5 dark:bg-n-6"
+      className="rounded-2xl border border-n-3 bg-gradient-to-br from-primary-1/[0.07] via-n-1 to-n-1 p-5 dark:border-n-5 dark:from-primary-1d/15 dark:via-n-6 dark:to-n-6"
     >
       <p className="font-display text-lg font-semibold tracking-tight">
         {measured === 0
           ? 'No ratios measured yet'
-          : `${counts.better} of ${measured} measured ratio${measured === 1 ? '' : 's'} ${counts.better === 1 ? 'outperforms' : 'outperform'} the benchmark`}
+          : `${counts.better} of ${measured} ratio${measured === 1 ? '' : 's'} favourable to industry`}
       </p>
       <div className="mt-4 flex h-3 gap-0.5 overflow-hidden rounded-full" aria-hidden="true">
         {parts
@@ -285,14 +280,66 @@ function Scoreline({ metrics }: { metrics: InsightMetric[] }) {
   )
 }
 
+/** The improvement agenda: each unfavourable ratio, largest gap first, with
+ *  where to look, why it matters and a first step. No savings figures. */
+export function ImprovementPlan({ items }: { items: Improvement[] }) {
+  return (
+    <section
+      aria-labelledby="where-to-improve"
+      className="rounded-2xl border border-n-3 bg-gradient-to-br from-accent-5/[0.08] via-n-1 to-n-1 p-5 dark:border-n-5 dark:from-accent-5/10 dark:via-n-6 dark:to-n-6"
+    >
+      <h3 id="where-to-improve" className="font-display text-lg font-semibold tracking-tight">
+        Where to improve
+      </h3>
+      {items.length === 0 ? (
+        <p className="mt-1 text-sm text-n-4 dark:text-n-4d">
+          Every measured ratio is in line with or favourable to the industry.
+        </p>
+      ) : (
+        <>
+          <p className="mt-1 text-sm text-n-4 dark:text-n-4d">
+            Unfavourable ratios, largest gap first, each with where to start.
+          </p>
+          <ol className="mt-4 divide-y divide-n-3 dark:divide-n-5">
+            {items.map((i, n) => (
+              <li key={i.key} className="flex gap-4 py-4 first:pt-0 last:pb-0">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#E4BA6A] to-[#B7791F] font-display text-sm font-bold text-white">
+                  {n + 1}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <p className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 font-display">
+                    <span className="text-[0.9375rem] font-semibold">{i.area}</span>
+                    <span className="text-xs text-n-4 dark:text-n-4d">
+                      {i.label} ·{' '}
+                      {metricDifference(Math.abs(i.difference), i.difference_unit).replace(/^\+/, '')}{' '}
+                      {i.difference > 0 ? 'above' : 'below'} industry
+                    </span>
+                  </p>
+                  <p className="mt-1 text-sm leading-6 text-n-4 dark:text-n-4d">{i.why}</p>
+                  <p className="mt-1 text-sm leading-6">
+                    <span className="font-display font-semibold">First step: </span>
+                    {i.first_step}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+    </section>
+  )
+}
+
 export function InsightsDashboard({
   metrics,
+  improvements,
   ...actions
-}: { metrics: InsightMetric[] } & MetricActions) {
+}: { metrics: InsightMetric[]; improvements: Improvement[] } & MetricActions) {
   const byKey = new Map(metrics.map((m) => [m.key, m]))
   return (
     <div className="space-y-8">
       <Scoreline metrics={metrics} />
+      <ImprovementPlan items={improvements} />
       {GROUPS.map((g) => {
         const items = g.keys.map((k) => byKey.get(k)).filter(Boolean) as InsightMetric[]
         if (!items.length) return null
@@ -304,7 +351,7 @@ export function InsightsDashboard({
               </h3>
               <p className="text-sm text-n-4 dark:text-n-4d">{g.note}</p>
             </div>
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-x-4 gap-y-4 sm:grid-cols-2 xl:grid-cols-3">
               {items.map((m) => (
                 <MetricCard key={m.key} m={m} actions={actions} />
               ))}
